@@ -55,4 +55,29 @@ The test subprocess disabled dotenv loading with `PYTHON_DOTENV_DISABLED=1` and 
 - certifi advisory: https://github.com/pypa/advisory-database/blob/main/vulns/certifi/PYSEC-2026-4320.yaml
 - certifi fixed release: https://pypi.org/project/certifi/2026.10.19/
 
-Local audit results reflect the advisory data available on this date and do not certify the whole application. Hosted Ubuntu/Windows setup, PostgreSQL integration, and the container job must be confirmed by the next GitHub Actions run after publication. This task did not start PostgreSQL, rebuild Docker images, modify volumes, or claim a hosted-CI result.
+Local audit results reflect the advisory data available on this date and do not certify the whole application. At completion of the first local dependency repair, hosted checks remained pending. The follow-up below records the next run and its separate runner-isolation fix. Local verification did not start PostgreSQL, rebuild Docker images, or modify volumes.
+
+## Hosted-run follow-up: isolate runner packages
+
+Run [39606658324](https://github.com/susmogus228/pitomo/actions/runs/39606658324) passed frontend, container, PostgreSQL, and audit jobs. Windows SQLite failed at `pip check`: the runner's preinstalled pipx 1.18.4 required filelock >=4.2 and platformdirs >=4.12.2, whereas the application's development lock pinned 4.0.6 and 4.12.1. The clean local virtual environments had passed because they did not contain the runner's pipx installation. Ubuntu SQLite stopped after 72 tests when matrix fail-fast cancelled it; its log did not report an assertion failure.
+
+The workflow now creates a project-local `.venv` after `setup-python` in the SQLite, PostgreSQL, and audit jobs. A `shell: python` step calls `venv.create(..., with_pip=True, system_site_packages=False)`. It appends the absolute `.venv/Scripts` directory on Windows, or `.venv/bin` on POSIX, to the UTF-8 `GITHUB_PATH` file. GitHub prepends this directory for subsequent steps in the job. A separate Python step checks `sys.prefix != sys.base_prefix` before installation. This fails early if PATH resolution selects the base interpreter.
+
+The package pins remain unchanged. Hash-checked installation, `pip check`, both dependency audits, and the existing application tests remain enabled. The runner's global pipx installation remains in place.
+
+Local checks for this workflow-only follow-up:
+
+- Parse the workflow with the already installed PyYAML 6.0.3: passed.
+- Parse the Python creation and guard blocks in all three jobs: passed.
+- Execute each creation block with mocked venv creation and file output for both `os.name == "nt"` and POSIX: the absolute Scripts/bin path and newline matched, six checks passed.
+- Check step order: environment creation and interpreter guard precede hash-checked installation in each job.
+- Execute the interpreter guard in the existing clean local development venv: passed.
+- Confirm that SQLite `pip check` and both audit commands remain present: passed.
+
+These checks verify workflow syntax and path selection. The earlier 385-test backend result remains the application regression evidence; the workflow-only change did not repeat that suite. The next hosted run must confirm both runner platforms and the new isolation steps.
+
+Official references:
+
+- [GitHub built-in Python shell](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsshell), supported across runner platforms.
+- [GITHUB_PATH](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#adding-a-system-path), applied to subsequent steps.
+- [Python 3.12 venv](https://docs.python.org/3.12/library/venv.html), isolated site-packages and platform-specific script directories.
