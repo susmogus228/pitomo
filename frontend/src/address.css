@@ -1,0 +1,15 @@
+.address-search { position: relative; margin: 20px 0 16px; min-width: 0; }
+.address-search > .field { margin-bottom: 8px; }
+.address-options { position: absolute; z-index: 5; top: 80px; left: 0; right: 0; background: var(--paper); list-style: none; margin: 0; padding: 4px; border: 1px solid var(--ink); border-radius: 6px; max-height: 280px; overflow-y: auto; }
+.address-options li { padding: 12px; min-height: 48px; cursor: pointer; line-height: 1.45; font-size: 14px; border-radius: 3px; }
+.address-options li + li { border-top: 1px solid var(--line); }
+.address-options li:hover, .address-options li.active { background: #eceef9; color: var(--blue); }
+.address-options small { display: block; color: var(--muted); margin-top: 4px; font-size: 12px; }
+.address-search-note { margin-top: 8px; line-height: 1.5; }
+.address-attribution { color: var(--muted); font-size: 11px; margin-top: 6px; }
+.address-attribution a { text-decoration: underline; }
+.address-details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 16px 0; }
+.address-details .field { margin: 0; }
+.delivery-point-note { margin-top: 12px; }
+.vets-map-panel .address-search { margin-top: 0; }
+@media (max-width: 540px) { .address-details { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .address-options { top: 74px; } }

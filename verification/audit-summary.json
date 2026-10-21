@@ -1,0 +1,248 @@
+{
+  "release": "0.13.1",
+  "verified_at_utc": "2026-10-13T07:05:14.212452+00:00",
+  "audit_findings_addressed": 20,
+  "backend_unique_passed": 353,
+  "postgresql_unique_passed": 29,
+  "frontend_passed": 113,
+  "test_aggregation": "initial full run plus successful targeted reruns; raw reports retained",
+  "browser_checks_passed": 54,
+  "browser": [
+    {
+      "id": "F08_species_search",
+      "pass": true,
+      "cards": 12
+    },
+    {
+      "id": "F19_honest_sort_label",
+      "pass": true
+    },
+    {
+      "id": "F15_grid_retained",
+      "pass": true
+    },
+    {
+      "id": "F15_debounce",
+      "pass": true,
+      "requests": [
+        "2500"
+      ]
+    },
+    {
+      "id": "mobile_filters_focus",
+      "pass": true
+    },
+    {
+      "id": "catalog_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "F20_product_title",
+      "pass": true
+    },
+    {
+      "id": "product_rating_near_title",
+      "pass": true
+    },
+    {
+      "id": "F17_gallery_fallback",
+      "pass": true
+    },
+    {
+      "id": "F17_card_fallback",
+      "pass": true
+    },
+    {
+      "id": "F03_registration_field_error",
+      "pass": true
+    },
+    {
+      "id": "F03_registration_focus",
+      "pass": true
+    },
+    {
+      "id": "consent_name_prefill",
+      "pass": true
+    },
+    {
+      "id": "analytics_optional_unchecked",
+      "pass": true
+    },
+    {
+      "id": "F09_webp",
+      "pass": true
+    },
+    {
+      "id": "F18_media_version",
+      "pass": true
+    },
+    {
+      "id": "F09_responsive_sources",
+      "pass": true
+    },
+    {
+      "id": "no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "F03_checkout_focus",
+      "pass": true
+    },
+    {
+      "id": "F14_keyboard_map_point",
+      "pass": true,
+      "point": {
+        "lat": 48.0193242,
+        "lon": 70.4443359
+      }
+    },
+    {
+      "id": "F02_draft_contacts",
+      "pass": true
+    },
+    {
+      "id": "F02_draft_address",
+      "pass": true
+    },
+    {
+      "id": "F02_draft_details",
+      "pass": true
+    },
+    {
+      "id": "F02_draft_payment",
+      "pass": true
+    },
+    {
+      "id": "F02_draft_comment",
+      "pass": true
+    },
+    {
+      "id": "checkout_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "F02_expired_draft_cleared",
+      "pass": true
+    },
+    {
+      "id": "F02_order_clears_draft",
+      "pass": true
+    },
+    {
+      "id": "F20_order_title",
+      "pass": true
+    },
+    {
+      "id": "F04_profile_locked",
+      "pass": true
+    },
+    {
+      "id": "F04_saved_snapshot",
+      "pass": true
+    },
+    {
+      "id": "F04_old_success_cleared",
+      "pass": true
+    },
+    {
+      "id": "F07_editor_focus",
+      "pass": true
+    },
+    {
+      "id": "F16_length_hint",
+      "pass": true
+    },
+    {
+      "id": "F01_partial_upload_visible",
+      "pass": true
+    },
+    {
+      "id": "F01_partial_success",
+      "pass": true
+    },
+    {
+      "id": "F01_retry_only_failed",
+      "pass": true,
+      "uploads": 3,
+      "textPatches": 1
+    },
+    {
+      "id": "F01_successful_photos_render",
+      "pass": true
+    },
+    {
+      "id": "F07_focus_returns",
+      "pass": true
+    },
+    {
+      "id": "F02_logout_clears_draft",
+      "pass": true
+    },
+    {
+      "id": "F10_dashboard_data_first",
+      "pass": true,
+      "statsTop": 521.984375
+    },
+    {
+      "id": "F10_export_options_collapsed",
+      "pass": true
+    },
+    {
+      "id": "admin_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "F13_low_stock_deep_link",
+      "pass": true
+    },
+    {
+      "id": "F06_empty_page_back",
+      "pass": true
+    },
+    {
+      "id": "F06_last_page_next_disabled",
+      "pass": true
+    },
+    {
+      "id": "F06_browser_back_restores_page",
+      "pass": true
+    },
+    {
+      "id": "F05_close_reopen_draft",
+      "pass": true
+    },
+    {
+      "id": "F05_reload_draft",
+      "pass": true
+    },
+    {
+      "id": "F05_quota_memory_recovery",
+      "pass": true
+    },
+    {
+      "id": "F11_incident_queue",
+      "pass": true
+    },
+    {
+      "id": "F12_filtered_export_download",
+      "pass": true,
+      "orderIds": [
+        2
+      ]
+    },
+    {
+      "id": "F20_admin_order_title",
+      "pass": true
+    },
+    {
+      "id": "catalog_images_render",
+      "pass": true
+    }
+  ],
+  "downloaded_xlsx_filters_and_contact_boundaries": "passed",
+  "guide_covers_product_ideas": 13,
+  "guide_covers_launch_topics": 7,
+  "independent_review": "Code Reviewer targeted pass; two configured profiles failed before launch",
+  "real_store_database_used_for_tests": false
+}

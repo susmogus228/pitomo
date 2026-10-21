@@ -1,0 +1,103 @@
+name: Application checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npm test -- --run
+      - run: npm run build
+
+  sqlite:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12.14'
+          cache: pip
+          cache-dependency-path: requirements-dev-lock.txt
+      - run: python -m pip install --require-hashes -r requirements-dev-lock.txt
+      - run: python -m pip check
+      - run: python -m ruff check .
+      - run: python -m unittest discover -s scripts -p "test_*.py"
+      - run: python -m pytest -q -m "not postgresql"
+        env:
+          PYTHONPATH: .
+
+  postgresql:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16.15-alpine@sha256:721873c34ceb9f8d8fc265984940dc982404c105f19ad51be9fdc5970a6080ea
+        env:
+          POSTGRES_USER: petshop_test
+          POSTGRES_PASSWORD: ci-only-disposable-postgres
+          POSTGRES_DB: petshop_ci_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U petshop_test -d petshop_ci_test"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12.14'
+          cache: pip
+          cache-dependency-path: requirements-dev-lock.txt
+      - run: python -m pip install --require-hashes -r requirements-dev-lock.txt
+      - run: python -m pytest -q -m postgresql --strict-markers
+        env:
+          PYTHONPATH: .
+          PETSHOP_TEST_POSTGRES_URL: postgresql+psycopg://petshop_test:ci-only-disposable-postgres@127.0.0.1:5432/petshop_ci_test
+
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12.14'
+      - run: python -m pip install --require-hashes -r requirements-dev-lock.txt
+      - run: python -m pip_audit -r requirements-dev-lock.txt --no-deps --disable-pip
+      - run: python -m pip_audit -r requirements-lock.txt --no-deps --disable-pip
+
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Generate disposable service credentials
+        run: |
+          password=$(openssl rand -hex 32)
+          echo "POSTGRES_PASSWORD=$password" >> "$GITHUB_ENV"
+          echo "PETSHOP_DATABASE_URL=postgresql+psycopg://petshop:$password@postgres:5432/petshop" >> "$GITHUB_ENV"
+          echo "PETSHOP_JWT_SECRET=$(openssl rand -hex 32)" >> "$GITHUB_ENV"
+      - run: docker compose -f docker-compose.yml -f docker-compose.frontend.yml config --quiet
+      - run: docker compose -f docker-compose.yml -f docker-compose.frontend.yml up --build --detach --wait --wait-timeout 120
+      - run: python3 scripts/check_health.py
+      - run: curl --fail --silent http://127.0.0.1:8080/ready
+      - name: Stop disposable services
+        if: always()
+        run: docker compose -f docker-compose.yml -f docker-compose.frontend.yml down --volumes

@@ -1,0 +1,71 @@
+{
+  "masters_preserved": true,
+  "derivatives": [
+    {
+      "name": "scenery",
+      "width": 1600,
+      "height": 533,
+      "png_bytes": 1649320,
+      "webp_bytes": 168782,
+      "has_alpha": true
+    },
+    {
+      "name": "road-strip",
+      "width": 768,
+      "height": 256,
+      "png_bytes": 2185755,
+      "webp_bytes": 20406,
+      "has_alpha": false
+    },
+    {
+      "name": "van-body",
+      "width": 768,
+      "height": 416,
+      "png_bytes": 1601232,
+      "webp_bytes": 48654,
+      "has_alpha": true
+    },
+    {
+      "name": "van-engine",
+      "width": 768,
+      "height": 416,
+      "png_bytes": 1307197,
+      "webp_bytes": 42364,
+      "has_alpha": true
+    },
+    {
+      "name": "wheel",
+      "width": 160,
+      "height": 160,
+      "png_bytes": 1797445,
+      "webp_bytes": 8770,
+      "has_alpha": true
+    },
+    {
+      "name": "wheel-flat",
+      "width": 160,
+      "height": 160,
+      "png_bytes": 1724472,
+      "webp_bytes": 7548,
+      "has_alpha": true
+    },
+    {
+      "name": "cloud",
+      "width": 384,
+      "height": 154,
+      "png_bytes": 908065,
+      "webp_bytes": 8102,
+      "has_alpha": true
+    },
+    {
+      "name": "engine-smoke",
+      "width": 320,
+      "height": 534,
+      "png_bytes": 974169,
+      "webp_bytes": 45422,
+      "has_alpha": true
+    }
+  ],
+  "original_total_bytes": 12147655,
+  "webp_total_bytes": 350048
+}

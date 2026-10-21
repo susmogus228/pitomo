@@ -1,0 +1,21 @@
+{
+  "release": "0.13.1",
+  "healthy": true,
+  "existing_records_preserved": true,
+  "before_counts": {
+    "users": 7,
+    "products": 49,
+    "orders": 13,
+    "product_variants": 49
+  },
+  "after_counts": {
+    "users": 7,
+    "products": 49,
+    "orders": 13,
+    "product_variants": 49
+  },
+  "private_configuration_values_preserved": true,
+  "only_image_tags_updated": true,
+  "database_backup_sha256": "df4282b0bf6964dac0079b9c1955566c67081e660ce02da0bec717dbd58d59cc",
+  "uploads_backup_sha256": "d9d8ee7ce954a0a3728acce0bb71235d2d70586b673a628f09e2b1121e1c2baf"
+}

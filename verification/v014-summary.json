@@ -1,0 +1,288 @@
+{
+  "release": "0.14.0",
+  "schema": "0012_v014",
+  "verified_at_utc": "2026-10-13T08:23:16.208301+00:00",
+  "scope": [
+    "N03",
+    "N04",
+    "N07"
+  ],
+  "guest_cart_explicitly_approved": true,
+  "moderation": "reports stay visible until admin decision",
+  "tests_passed": {
+    "backend": 385,
+    "postgresql": 35,
+    "frontend": 130
+  },
+  "backend_aggregation": "initial full run plus successful focused image query regression rerun; raw reports retained",
+  "postgresql_aggregation": "34 initial plus one late-added concurrent repeat test",
+  "browser_assertions": 59,
+  "browser_unique_ids": 56,
+  "browser_scenarios": {
+    "browser_purchase_guest": [
+      {
+        "id": "fixture_stock_ready",
+        "pass": true
+      },
+      {
+        "id": "guest_add_without_login",
+        "pass": true
+      },
+      {
+        "id": "guest_reload_quantity",
+        "pass": true
+      },
+      {
+        "id": "guest_photo_renders",
+        "pass": true
+      },
+      {
+        "id": "guest_mobile_fit",
+        "pass": true
+      },
+      {
+        "id": "lost_merge_receipt_kept",
+        "pass": true
+      },
+      {
+        "id": "merge_retry_same_key",
+        "pass": true,
+        "requests": 2
+      },
+      {
+        "id": "merge_no_duplicate_preserves_existing",
+        "pass": true
+      },
+      {
+        "id": "merge_partial_remaining",
+        "pass": true
+      },
+      {
+        "id": "undo_current_stock_partial",
+        "pass": true
+      },
+      {
+        "id": "move_to_favorites_atomic",
+        "pass": true
+      },
+      {
+        "id": "logout_private_cart_hidden",
+        "pass": true
+      },
+      {
+        "id": "confirmed_remaining_paused_on_reload",
+        "pass": true
+      },
+      {
+        "id": "no_uncaught_errors",
+        "pass": true,
+        "errors": []
+      }
+    ],
+    "browser_purchase_address": [
+      {
+        "id": "address_create_point_default",
+        "pass": true
+      },
+      {
+        "id": "address_change_default",
+        "pass": true
+      },
+      {
+        "id": "address_manual_edit_clears_point",
+        "pass": true
+      },
+      {
+        "id": "address_delete_promotes_default",
+        "pass": true
+      },
+      {
+        "id": "addresses_mobile_fit",
+        "pass": true
+      },
+      {
+        "id": "address_checkout_fixture_cart",
+        "pass": true
+      },
+      {
+        "id": "checkout_saved_address_selected",
+        "pass": true
+      },
+      {
+        "id": "checkout_manual_address_clears_point",
+        "pass": true
+      },
+      {
+        "id": "checkout_draft_preserved",
+        "pass": true
+      },
+      {
+        "id": "checkout_mobile_fit",
+        "pass": true
+      },
+      {
+        "id": "no_uncaught_errors",
+        "pass": true,
+        "errors": []
+      }
+    ],
+    "browser_purchase_repeat": [
+      {
+        "id": "repeat_preview_current_price",
+        "pass": true
+      },
+      {
+        "id": "repeat_409_no_write_requires_reconfirm",
+        "pass": true
+      },
+      {
+        "id": "repeat_dialog_mobile_fit",
+        "pass": true
+      },
+      {
+        "id": "repeat_success_current_price_no_charge",
+        "pass": true
+      },
+      {
+        "id": "repeat_lost_response_key_saved",
+        "pass": true
+      },
+      {
+        "id": "repeat_reload_retry_same_key_and_fingerprint",
+        "pass": true
+      },
+      {
+        "id": "repeat_retry_no_duplicate",
+        "pass": true
+      },
+      {
+        "id": "repeat_confirmed_key_cleared",
+        "pass": true
+      },
+      {
+        "id": "history_repeat_buttons_outside_links",
+        "pass": true
+      },
+      {
+        "id": "no_uncaught_errors",
+        "pass": true,
+        "errors": []
+      }
+    ],
+    "browser_purchase_final": [
+      {
+        "id": "private_cart_logout_precondition",
+        "pass": true
+      },
+      {
+        "id": "cart_fallback_compact",
+        "pass": true
+      },
+      {
+        "id": "saved_address_select_accessible_name",
+        "pass": true
+      },
+      {
+        "id": "repeat_fallback_compact",
+        "pass": true
+      },
+      {
+        "id": "private_cart_not_copied_after_logout",
+        "pass": true
+      },
+      {
+        "id": "logout_server_session_revoked",
+        "pass": true
+      },
+      {
+        "id": "no_uncaught_errors",
+        "pass": true,
+        "errors": []
+      }
+    ],
+    "browser_reviews": [
+      {
+        "id": "review_purchase_badges",
+        "pass": true
+      },
+      {
+        "id": "review_edited_badge",
+        "pass": true
+      },
+      {
+        "id": "review_photo_filter",
+        "pass": true
+      },
+      {
+        "id": "review_uploaded_photo",
+        "pass": true
+      },
+      {
+        "id": "review_sort",
+        "pass": true
+      },
+      {
+        "id": "review_distribution",
+        "pass": true
+      },
+      {
+        "id": "report_visible_until_decision",
+        "pass": true
+      },
+      {
+        "id": "reviews_mobile_fit",
+        "pass": true
+      },
+      {
+        "id": "admin_report_queue",
+        "pass": true
+      },
+      {
+        "id": "admin_report_resolved",
+        "pass": true
+      },
+      {
+        "id": "admin_hidden_public_count",
+        "pass": true
+      },
+      {
+        "id": "admin_history_reason",
+        "pass": true
+      },
+      {
+        "id": "moderation_mobile_fit",
+        "pass": true
+      },
+      {
+        "id": "admin_restore",
+        "pass": true
+      },
+      {
+        "id": "hidden_photo_404",
+        "pass": true
+      },
+      {
+        "id": "restored_photo_200",
+        "pass": true
+      },
+      {
+        "id": "reviews_no_uncaught_errors",
+        "pass": true,
+        "errors": []
+      }
+    ]
+  },
+  "viewports": [
+    [
+      390,
+      844
+    ],
+    [
+      1440,
+      1000
+    ]
+  ],
+  "review": "Code Reviewer pass; address account race fixed and targeted test passed; partial merge pause delta passed",
+  "real_store_database_used_for_write_tests": false,
+  "runtime_deployment": "separate v014-runtime.json when completed"
+}

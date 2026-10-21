@@ -1,0 +1,100 @@
+.delivery-tracking { container-type: inline-size; padding: 24px 0; overflow: hidden; }
+.delivery-heading { display: flex; align-items: start; justify-content: space-between; gap: 16px; padding-inline: 4%; }
+.delivery-heading .eyebrow { color: var(--blue); font-size: clamp(10px, 1.2cqw, 15px); letter-spacing: 2.5px; margin: 0 0 16px; }
+.delivery-heading h2 { font-family: var(--display); font-weight: 400; font-size: clamp(30px, 7.4cqw, 88px); line-height: 1.16; margin: 0; }
+.delivery-description { color: var(--muted); font-size: clamp(14px, 1.7cqw, 21px); line-height: 1.65; margin: 16px 0 0; padding-inline: 4%; }
+.delivery-motion-toggle { background: transparent; border: 1px solid #aaa99e; border-radius: 6px; padding: 10px 16px; font-size: 14px; white-space: nowrap; cursor: pointer; min-height: 44px; margin-top: 4px; }
+.delivery-motion-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.delivery-motion-toggle:focus-visible, .delivery-history summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+.delivery-scene { position: relative; margin: -20px -1px 32px; }
+.delivery-artboard { position: relative; aspect-ratio: 3; isolation: isolate; overflow: hidden; }
+.delivery-scenery { display: block; width: 100%; height: auto; }
+.delivery-cloud { position: absolute; width: 12%; height: auto; }
+.delivery-cloud-one { top: 19%; left: 35%; }
+.delivery-cloud-two { top: 16%; left: 58%; width: 10%; }
+.delivery-road-viewport { position: absolute; left: 0; right: 0; top: 84%; height: 12%; overflow: hidden; }
+.delivery-road-track { position: absolute; width: 200%; height: 100%; background: url("/media/delivery-v013/road-strip.webp") repeat-x center / 20% auto; }
+.delivery-truck-position { position: absolute; width: 29%; aspect-ratio: 1704 / 923; left: 22%; bottom: 12%; transform: translateX(0); transition: transform 1100ms cubic-bezier(.22,.61,.36,1); }
+/* Offsets are relative to the van width: 13% / 29% and 32% / 29% of the scene. */
+.stage-in_transit .delivery-truck-position { transform: translateX(44.8276%); }
+.stage-nearby .delivery-truck-position { transform: translateX(110.3448%); }
+.delivery-vehicle, .delivery-chassis { position: absolute; inset: 0; }
+.delivery-vehicle { transform-origin: 50% 55%; }
+.delivery-van-body { position: absolute; display: block; width: 100%; height: 100%; }
+.delivery-wheel-slot { position: absolute; width: 17.5%; aspect-ratio: 1; top: 84.62%; transform: translate(-50%, -50%); }
+.delivery-wheel-back { left: 20.54%; }
+.delivery-wheel-front { left: 78.76%; }
+.delivery-wheel { display: block; width: 100%; height: auto; }
+.is-moving .delivery-chassis { animation: delivery-bob 850ms ease-in-out infinite; }
+.is-moving .delivery-wheel { animation: delivery-wheel-turn 1200ms linear infinite; }
+.is-moving .delivery-road-track { animation: delivery-road-move 9s linear infinite; }
+.is-moving .delivery-cloud { animation: delivery-cloud-drift 8s ease-in-out infinite alternate; }
+.is-moving .delivery-cloud-two { animation-delay: -4s; }
+.incident-flat_tire .delivery-vehicle { transform-origin: 20.54% 84.62%; transform: rotate(1.5deg); }
+.incident-overturned .delivery-vehicle { transform: translateY(-4%) rotate(-174deg); }
+.delivery-smoke-origin { position: absolute; left: 89.79%; top: 56.34%; width: 35%; aspect-ratio: 971 / 1619; transform: translate(-50%, -95%); pointer-events: none; }
+.delivery-smoke-puff { position: absolute; display: block; inset: 0; width: 100%; height: auto; opacity: 0; transform-origin: 50% 95%; }
+.delivery-smoke-0 { opacity: .35; }
+.has-engine-smoke .delivery-smoke-puff { animation: delivery-smoke-rise 3s ease-out infinite; }
+.has-engine-smoke .delivery-smoke-1 { animation-delay: -1s; }
+.has-engine-smoke .delivery-smoke-2 { animation-delay: -2s; }
+.delivery-art-error { padding: 40px 24px; color: var(--muted); text-align: center; font-size: 14px; }
+.delivery-steps { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; padding: 0 8.5%; margin: 0; }
+.delivery-steps li { position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--muted); text-align: center; font-size: 14px; line-height: 1.5; padding: 0 4px; }
+.delivery-steps li::before { content: ""; position: absolute; left: -50%; right: 50%; top: 17px; height: 2px; background: var(--line); }
+.delivery-steps li:first-child::before { content: none; }
+.delivery-step-dot { position: relative; z-index: 1; display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--line); background: var(--paper); border-radius: 50%; font-size: 14px; }
+.delivery-steps .is-complete { color: var(--ink); }
+.delivery-steps .is-complete .delivery-step-dot { background: #e3e8fd; color: var(--blue); border-color: #c3cdf8; }
+.delivery-steps .is-current { color: var(--blue); font-weight: 700; }
+.delivery-steps .is-current .delivery-step-dot { color: white; background: var(--blue); border-color: var(--blue); }
+.delivery-steps .is-complete::before, .delivery-steps .is-current::before { background: var(--blue); }
+.delivery-footer { margin: 28px 4% 0; padding-top: 20px; border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: start; }
+.delivery-footnote { display: flex; flex-direction: column; gap: 8px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.delivery-incident { border-left: 3px solid var(--danger); padding: 12px 16px; margin-top: 24px; background: #f4e9df; font-size: 14px; line-height: 1.6; }
+.delivery-incident strong { color: #86302c; }
+.delivery-incident p { margin: 5px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.has-incident .delivery-heading h2 { color: var(--danger); }
+.delivery-history { font-size: 13px; margin: 0; }
+.delivery-history summary { cursor: pointer; padding: 0 0 8px; width: fit-content; color: var(--blue); font-weight: 600; }
+.delivery-history[open] { grid-column: 1 / -1; }
+.delivery-history ol { list-style: none; padding: 0; margin: 8px 0 0; }
+.delivery-history li { display: grid; grid-template-columns: minmax(100px, 150px) minmax(0, 1fr); gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); line-height: 1.6; }
+.delivery-history time { color: var(--muted); }
+.delivery-history small { display: block; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; color: var(--muted); }
+.delivery-connection { display: flex; align-items: start; justify-content: space-between; gap: 12px; margin-bottom: 16px; padding: 12px 16px; border: 1px solid #b7ac83; border-radius: 4px; color: #6c571a; font-size: 12px; line-height: 1.6; background: #f2eddc; }
+.delivery-connection .text-button { flex-shrink: 0; }
+.delivery-admin-controls { margin-top: 20px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; }
+.delivery-admin-controls h2 { font-size: 19px; margin: 0 0 16px; }
+.delivery-admin-controls .field { margin: 16px 0; }
+.delivery-admin-controls textarea { min-height: 88px; resize: vertical; }
+.delivery-admin-controls .button { font-size: 13px; white-space: normal; text-align: center; }
+.delivery-admin-controls .button-row { flex-wrap: wrap; gap: 12px; }
+.delivery-admin-controls .form-note { line-height: 1.6; }
+.admin-order-main > .delivery-tracking { margin-top: 24px; }
+@keyframes delivery-wheel-turn { to { transform: rotate(360deg); } }
+@keyframes delivery-road-move { to { transform: translateX(-40%); } }
+@keyframes delivery-cloud-drift { to { transform: translateX(-12%); } }
+@keyframes delivery-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@keyframes delivery-smoke-rise { 0% { transform: translateY(8%) scale(.65); opacity: 0; } 25% { opacity: .65; } 100% { transform: translate(12%, -24%) scale(1.1); opacity: 0; } }
+@media (max-width: 600px) {
+  .delivery-tracking { padding: 20px 0; }
+  .delivery-admin-controls { padding: 20px 16px; }
+  .delivery-heading { gap: 8px; }
+  .delivery-heading, .delivery-description { padding-inline: 0; }
+  .delivery-heading h2 { font-size: clamp(27px, 8cqw, 38px); }
+  .delivery-heading .eyebrow { font-size: 9px; }
+  .delivery-motion-toggle { padding: 8px 10px; font-size: 12px; white-space: normal; max-width: 110px; }
+  .delivery-description { font-size: 14px; }
+  .delivery-scene { margin: 0 -24px 24px; }
+  .delivery-artboard { width: 124%; margin-left: -12%; }
+  .delivery-steps { padding: 0; }
+  .delivery-steps li { font-size: 12px; gap: 8px; }
+  .delivery-history li { grid-template-columns: 1fr; gap: 3px; }
+  .delivery-footer { grid-template-columns: 1fr; gap: 16px; margin-inline: 0; }
+  .delivery-connection { flex-direction: column; }
+  .delivery-admin-controls .button-row { flex-direction: column; align-items: stretch; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .delivery-scene *, .delivery-scene *::before { animation: none !important; transition: none !important; }
+}

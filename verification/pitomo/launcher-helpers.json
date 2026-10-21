@@ -1,0 +1,16 @@
+{
+    "powershell":  "5.1.22621.4391",
+    "count":  9,
+    "checks":  [
+                   "URL-safe secret strength",
+                   "Independent random secrets",
+                   "Existing configuration cannot be overwritten",
+                   "Existing bytes preserved",
+                   "Credential ACL inheritance disabled",
+                   "Only current user and SYSTEM can read credentials",
+                   "Environment value parsing",
+                   "Windows case normalization",
+                   "Independent project isolation"
+               ],
+    "passed":  true
+}

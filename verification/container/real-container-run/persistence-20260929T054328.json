@@ -1,0 +1,149 @@
+{
+  "phase": "persistence",
+  "base_url": "http://127.0.0.1:18080",
+  "passed": true,
+  "error": null,
+  "created_at": "2026-09-29T05:43:29.288026+00:00",
+  "events": [
+    {
+      "check": "same_deployment",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/ready",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 31.0,
+      "request_id": "e8b244dbae754a8092cb414edf39f4e3"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 344.0,
+      "request_id": "a199f2edad6c43419e85c687f18741c0"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "token_contract",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 31.0,
+      "request_id": "132724750c3e413898c0a3543fe70f9c"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "profile_persisted",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/1",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 31.0,
+      "request_id": "45248905b8e1450e987e2c5c09fc200c"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "order_persisted",
+      "passed": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/orders",
+      "expected": 201,
+      "status": 201,
+      "duration_ms": 16.0,
+      "request_id": "5107c4fbcc89433a8d17c1b4ca042c7c"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "idempotency_persisted",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/1",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 0.0,
+      "request_id": "67db26baa15644cd87c921d910dd286e"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "catalog_and_stock_persisted",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/cart",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 16.0,
+      "request_id": "5f6d946e7b1941618a8e55fec9e918a7"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "cart_persisted",
+      "passed": true
+    }
+  ]
+}

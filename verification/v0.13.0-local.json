@@ -1,0 +1,307 @@
+{
+  "release": "0.13.0",
+  "checked_at": "2026-10-13T04:42:23.874516+00:00",
+  "backend_non_postgresql": {
+    "passed": 314,
+    "failed": 0,
+    "deselected": 28
+  },
+  "postgresql_delivery_races": {
+    "isolated_postgresql_delivery_races": "passed",
+    "tests_passed": 5,
+    "real_store_database_used": false
+  },
+  "frontend_tests": {
+    "passed": 79,
+    "failed": 0
+  },
+  "ruff": "passed",
+  "typescript_vite_build": "passed",
+  "design_qa": "passed",
+  "reviews": {
+    "delivery_business_logic": "passed_source_and_tests",
+    "fallback_design_review": "passed_screenshots_and_css",
+    "unsupported_design_profile": "failed_to_start_not_counted"
+  },
+  "deployment": {
+    "release": "0.13.0",
+    "before_counts": {
+      "users": 7,
+      "products": 49,
+      "orders": 12
+    },
+    "after_counts": {
+      "users": 7,
+      "products": 49,
+      "orders": 12
+    },
+    "private_environment_values_preserved": true,
+    "compose_wait_passed": true,
+    "existing_user_product_order_rows_unchanged": true,
+    "database_backup_sha256": "aafaa9f35d188b5203570d7cc5c62d395b6df62735e5eda39dcb2362cb3e2a7b",
+    "uploads_backup_sha256": "d9d8ee7ce954a0a3728acce0bb71235d2d70586b673a628f09e2b1121e1c2baf"
+  },
+  "local_smoke": {
+    "release": "0.13.0",
+    "origin": "http://127.0.0.1:8080",
+    "checked_at": "2026-10-13T04:40:29.721692+00:00",
+    "checks": [
+      {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/catalog",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/vets",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/admin/orders/1",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/ready",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/api/v1/products?page_size=1",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/api/v1/admin/orders",
+        "method": "GET",
+        "status": 401,
+        "expected": 401
+      },
+      {
+        "path": "/api/v1/orders/1",
+        "method": "GET",
+        "status": 401,
+        "expected": 401
+      },
+      {
+        "path": "/assets/index-DcILFqJx.js",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/assets/index-C36WEzPp.css",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/cloud.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/engine-smoke.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/road-strip.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/scenery.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/van-body.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/van-engine.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/wheel-flat.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/wheel.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      }
+    ],
+    "media_hashes_match_source": true,
+    "result": "passed"
+  },
+  "public_smoke": {
+    "release": "0.13.0",
+    "origin": "https://emotional-implement-bedroom-face.trycloudflare.com",
+    "checked_at": "2026-10-13T04:41:49.547446+00:00",
+    "checks": [
+      {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/catalog",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/vets",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/admin/orders/1",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/ready",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/api/v1/products?page_size=1",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/api/v1/admin/orders",
+        "method": "GET",
+        "status": 401,
+        "expected": 401
+      },
+      {
+        "path": "/api/v1/orders/1",
+        "method": "GET",
+        "status": 401,
+        "expected": 401
+      },
+      {
+        "path": "/assets/index-DcILFqJx.js",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/assets/index-C36WEzPp.css",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/cloud.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/engine-smoke.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/road-strip.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/scenery.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/van-body.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/van-engine.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/wheel-flat.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/media/delivery-v013/wheel.webp",
+        "method": "GET",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "path": "/api/v1/auth/browser/login",
+        "method": "POST",
+        "status": 401,
+        "expected": 401
+      },
+      {
+        "path": "/api/v1/auth/browser/login",
+        "method": "POST",
+        "status": 403,
+        "expected": 403
+      }
+    ],
+    "media_hashes_match_source": true,
+    "result": "passed"
+  },
+  "browser": {
+    "viewports": [
+      "1440x1050",
+      "390x844"
+    ],
+    "database": "isolated_in_memory_synthetic_orders",
+    "three_stages_and_incidents": "passed",
+    "engine_cat_outside_repairing": "passed",
+    "motion_pause_reduced_motion": "passed",
+    "network_retention_retry": "passed",
+    "page_horizontal_overflow": false
+  },
+  "limitations": [
+    "Delivery is a demonstration controlled by the administrator, without GPS or courier ETA.",
+    "Full screen-reader audit and clean Windows install were not performed.",
+    "Quick Tunnel is temporary and depends on the local PC and Docker."
+  ]
+}

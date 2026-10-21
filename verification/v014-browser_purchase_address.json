@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "id": "address_create_point_default",
+      "pass": true
+    },
+    {
+      "id": "address_change_default",
+      "pass": true
+    },
+    {
+      "id": "address_manual_edit_clears_point",
+      "pass": true
+    },
+    {
+      "id": "address_delete_promotes_default",
+      "pass": true
+    },
+    {
+      "id": "addresses_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "address_checkout_fixture_cart",
+      "pass": true
+    },
+    {
+      "id": "checkout_saved_address_selected",
+      "pass": true
+    },
+    {
+      "id": "checkout_manual_address_clears_point",
+      "pass": true
+    },
+    {
+      "id": "checkout_draft_preserved",
+      "pass": true
+    },
+    {
+      "id": "checkout_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "screenshots": [
+    "purchase-addresses-desktop.png",
+    "purchase-addresses-mobile.png",
+    "purchase-checkout-address-mobile.png"
+  ]
+}

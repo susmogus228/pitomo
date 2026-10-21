@@ -1,0 +1,57 @@
+{
+  "release": "0.14.0",
+  "schema": "0012_v014",
+  "url": "https://emotional-implement-bedroom-face.trycloudflare.com",
+  "verified_at_utc": "2026-10-13T08:46:37.818135+00:00",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 754
+    },
+    {
+      "path": "/assets/index-Dp1Mcebt.js",
+      "status": 200,
+      "bytes": 368424,
+      "source_bytes_match": true
+    },
+    {
+      "path": "/assets/index-BqTDcZKU.css",
+      "status": 200,
+      "bytes": 62821,
+      "source_bytes_match": true
+    },
+    {
+      "path": "/catalog",
+      "status": 200,
+      "bytes": 754
+    },
+    {
+      "path": "/ready",
+      "status": 200,
+      "bytes": 41
+    },
+    {
+      "path": "/api/v1/products",
+      "status": 200,
+      "bytes": 20084
+    },
+    {
+      "path": "/api/v1/admin/review-reports",
+      "status": 401,
+      "bytes": 58
+    },
+    {
+      "path": "/api/v1/users/me/addresses",
+      "status": 401,
+      "bytes": 58
+    },
+    {
+      "path": "/media/hero-cat-1280.webp",
+      "status": 200,
+      "bytes": 224688
+    }
+  ],
+  "public_files_match_verified_build": true,
+  "writes_to_user_accounts": false
+}

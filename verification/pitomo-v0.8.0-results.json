@@ -1,0 +1,82 @@
+{
+  "release": "Pitomo 0.8.0",
+  "date": "2026-09-29",
+  "scope": "Local Windows demonstration storefront; test payment and payment on receipt",
+  "url": "http://127.0.0.1:8080",
+  "schema": "0005_v080",
+  "backend": {
+    "passed": 225,
+    "non_postgresql": 206,
+    "postgresql": 19,
+    "ruff": "passed"
+  },
+  "frontend": {
+    "unit_tests_passed": 27,
+    "build": "passed",
+    "typecheck": "passed",
+    "production_dependency_vulnerabilities": 0
+  },
+  "http": {
+    "passed": 42,
+    "evidence": "pitomo/http-results.json"
+  },
+  "launcher": {
+    "powershell_helper_checks": 9,
+    "parse": "passed",
+    "actual_start": "passed",
+    "repeated_start": "passed",
+    "seed_on_first_start": 24,
+    "seed_on_repeated_start": 0,
+    "dependency_layers_cached": true,
+    "existing_env_preserved": true
+  },
+  "docker": {
+    "postgres": "healthy",
+    "api": "healthy",
+    "web": "healthy",
+    "loopback_only": true
+  },
+  "backup": {
+    "pre_migration_dump_created": true,
+    "excluded_from_package": true
+  },
+  "codebase_memory": "Actual Petshop project absent from fresh list_projects; file discovery used; index unchanged",
+  "browser": [
+    "registration and browser login",
+    "guest cart intent replay once after login and reload",
+    "favorites toggle",
+    "product quantity",
+    "cart quantity and server totals",
+    "demo checkout",
+    "payment failure then successful retry",
+    "profile update",
+    "logout and login",
+    "order history with paid and cancelled orders",
+    "delivery address and COD checkout on mobile",
+    "order cancellation",
+    "eight category menu",
+    "amphibian filter and sort",
+    "empty search result",
+    "390px home and catalog without horizontal overflow",
+    "all homepage images loaded",
+    "reduced-motion disables cat animation and hides replay control",
+    "keyboard skip link visible only when focused",
+    "390px checkout without horizontal overflow or overlapping controls"
+  ],
+  "reviews": {
+    "security_privacy": "pass",
+    "implementation": "pass",
+    "visual": "pass"
+  },
+  "limits": [
+    "No real money or delivery fulfillment",
+    "No public hosting or HTTPS deployment",
+    "Fresh Windows WSL installation not repeated",
+    "No external CI run"
+  ],
+  "historical_reports": [
+    "windows-0.7.1-historical.json",
+    "backend-baseline-0.7.1.json",
+    "container/"
+  ]
+}

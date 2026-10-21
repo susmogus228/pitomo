@@ -1,0 +1,88 @@
+.consent-fields {
+  border: 0;
+  margin: 24px 0;
+  padding: 0;
+  min-width: 0;
+}
+.consent-fields legend {
+  font-weight: 650;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.consent-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.consent-choice input {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--blue, #3452f3);
+}
+.consent-choice input:focus-visible {
+  outline: 2px solid var(--blue, #3452f3);
+  outline-offset: 3px;
+}
+.consent-choice small {
+  display: block;
+  margin-top: 4px;
+}
+.consent-links {
+  padding-left: 32px;
+  font-size: 13px;
+  margin: 8px 0;
+}
+.privacy-draft {
+  padding: 16px;
+  background: #ebe8dc;
+  border-left: 3px solid #887b45;
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0 0 20px;
+}
+.privacy-settings {
+  border-top: 1px solid var(--line, #d2cfc5);
+  margin-top: 32px;
+  padding-top: 32px;
+}
+.privacy-settings h2 {
+  margin-bottom: 16px;
+}
+.privacy-withdraw {
+  display: block;
+  margin: 20px 0;
+}
+.privacy-document {
+  max-width: 820px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  padding-bottom: 48px;
+}
+.privacy-document section {
+  scroll-margin-top: 32px;
+  margin: 32px 0;
+}
+.privacy-document h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+.privacy-document p {
+  margin: 0 0 16px;
+}
+@media (max-width: 600px) {
+  .privacy-document h2 {
+    font-size: 20px;
+  }
+  .privacy-draft {
+    padding: 12px;
+  }
+  .consent-fields legend {
+    font-size: 16px;
+  }
+}

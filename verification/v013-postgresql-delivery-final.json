@@ -1,0 +1,5 @@
+{
+  "isolated_postgresql_delivery_races": "passed",
+  "tests_passed": 5,
+  "real_store_database_used": false
+}

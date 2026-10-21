@@ -1,0 +1,205 @@
+{
+  "stage": "backup",
+  "passed": true,
+  "error": null,
+  "created_at": "2026-09-29T05:43:07.151202+00:00",
+  "events": [
+    {
+      "step": "compose_full_stop_preserve_volumes",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": " Container petshop-validation-20260929-api-1 Stopping \n Container petshop-validation-20260929-api-1 Stopped \n Container petshop-validation-20260929-migrate-1 Stopping \n Container petshop-validation-20260929-migrate-1 Stopped \n Container petshop-validation-20260929-postgres-1 Stopping \n Container petshop-validation-20260929-postgres-1 Stopped \n"
+    },
+    {
+      "step": "compose_full_start",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": " Container petshop-validation-20260929-postgres-1 Starting \n Container petshop-validation-20260929-postgres-1 Started \n Container petshop-validation-20260929-postgres-1 Waiting \n Container petshop-validation-20260929-postgres-1 Healthy \n Container petshop-validation-20260929-migrate-1 Starting \n Container petshop-validation-20260929-migrate-1 Started \n Container petshop-validation-20260929-migrate-1 Waiting \n Container petshop-validation-20260929-migrate-1 Exited \n Container petshop-validation-20260929-api-1 Starting \n Container petshop-validation-20260929-api-1 Started \n Container petshop-validation-20260929-migrate-1 Waiting \n Container petshop-validation-20260929-api-1 Waiting \n Container petshop-validation-20260929-postgres-1 Waiting \n Container petshop-validation-20260929-migrate-1 Exited \n Container petshop-validation-20260929-postgres-1 Healthy \n Container petshop-validation-20260929-api-1 Healthy \n"
+    },
+    {
+      "step": "http_persistence",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"phase\": \"persistence\", \"passed\": true, \"events\": 28, \"evidence\": \"D:\\\\Projects\\\\_outputs\\\\petshop-backend-review\\\\work\\\\fixed\\\\petshop-api\\\\work\\\\container-validation\\\\real-container-run\\\\persistence-20260929T054302.json\", \"error\": null}\n"
+    },
+    {
+      "step": "database_backup",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"event\": \"database_backup_succeeded\", \"file\": \"D:\\\\Projects\\\\_outputs\\\\petshop-backend-review\\\\work\\\\fixed\\\\petshop-api\\\\work\\\\container-validation\\\\database-7809e526.dump\"}\n"
+    },
+    {
+      "step": "backup_overwrite_rejected",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "output": "{\"event\": \"database_operation_failed\", \"reason\": \"FileExistsError\"}\n"
+    },
+    {
+      "step": "rejected_backup_preserves_file",
+      "passed": true
+    },
+    {
+      "step": "database_restore_empty",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"event\": \"database_restore_succeeded\", \"file\": \"D:\\\\Projects\\\\_outputs\\\\petshop-backend-review\\\\work\\\\fixed\\\\petshop-api\\\\work\\\\container-validation\\\\database-7809e526.dump\"}\n"
+    },
+    {
+      "step": "restored_all_public_table_counts_and_hashes",
+      "passed": true
+    },
+    {
+      "step": "backup_restore_reconciliation",
+      "source": {
+        "alembic_version": {
+          "rows": 1,
+          "sha256": "bd5f044f26f51242919353b9ccd103bdf99c92a7272ae6bbd26d4cc5dc802c79"
+        },
+        "cart_items": {
+          "rows": 1,
+          "sha256": "f4a3b28baf4e029ab64799b86ed3b8db71adccaf6842bf95762233f57ced2220"
+        },
+        "carts": {
+          "rows": 2,
+          "sha256": "119a3b6b680d1dbbb29c9ba61dc7180788c8116531f83053fb3d249dceb1d6c2"
+        },
+        "id_counters": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "login_attempts": {
+          "rows": 9,
+          "sha256": "86cb3dd20f91bf49fcba0456b688a0d3e3d1d62ae0240c75ebcde753236bb876"
+        },
+        "order_items": {
+          "rows": 2,
+          "sha256": "94f6c2cdd6a568cb120e8832096b1433154a23fab8a78714e991ed5ab224f833"
+        },
+        "orders": {
+          "rows": 2,
+          "sha256": "ede449e2d9b13e138f92d47d8097dbaf3cb359811060e8237851294f72a67396"
+        },
+        "product_variants": {
+          "rows": 4,
+          "sha256": "c1122dd96507c9bcb4f90692611fc3dbbe725e3f33a95802072523536a80acc9"
+        },
+        "products": {
+          "rows": 3,
+          "sha256": "776fdba9cf12e02d685a6378a7b30772bef05d5da44aa2dcf46917a6544715ab"
+        },
+        "users": {
+          "rows": 3,
+          "sha256": "9450260c6ed5cb14b95549b47bd6011842983e1bd777693f5038ff130f007011"
+        },
+        "_sequences": {
+          "order_items_id_seq": [
+            2,
+            true
+          ],
+          "orders_id_seq": [
+            2,
+            true
+          ],
+          "product_variants_id_seq": [
+            4,
+            true
+          ],
+          "products_id_seq": [
+            3,
+            true
+          ],
+          "users_id_seq": [
+            3,
+            true
+          ]
+        }
+      },
+      "restored": {
+        "alembic_version": {
+          "rows": 1,
+          "sha256": "bd5f044f26f51242919353b9ccd103bdf99c92a7272ae6bbd26d4cc5dc802c79"
+        },
+        "cart_items": {
+          "rows": 1,
+          "sha256": "f4a3b28baf4e029ab64799b86ed3b8db71adccaf6842bf95762233f57ced2220"
+        },
+        "carts": {
+          "rows": 2,
+          "sha256": "119a3b6b680d1dbbb29c9ba61dc7180788c8116531f83053fb3d249dceb1d6c2"
+        },
+        "id_counters": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "login_attempts": {
+          "rows": 9,
+          "sha256": "86cb3dd20f91bf49fcba0456b688a0d3e3d1d62ae0240c75ebcde753236bb876"
+        },
+        "order_items": {
+          "rows": 2,
+          "sha256": "94f6c2cdd6a568cb120e8832096b1433154a23fab8a78714e991ed5ab224f833"
+        },
+        "orders": {
+          "rows": 2,
+          "sha256": "ede449e2d9b13e138f92d47d8097dbaf3cb359811060e8237851294f72a67396"
+        },
+        "product_variants": {
+          "rows": 4,
+          "sha256": "c1122dd96507c9bcb4f90692611fc3dbbe725e3f33a95802072523536a80acc9"
+        },
+        "products": {
+          "rows": 3,
+          "sha256": "776fdba9cf12e02d685a6378a7b30772bef05d5da44aa2dcf46917a6544715ab"
+        },
+        "users": {
+          "rows": 3,
+          "sha256": "9450260c6ed5cb14b95549b47bd6011842983e1bd777693f5038ff130f007011"
+        },
+        "_sequences": {
+          "order_items_id_seq": [
+            2,
+            true
+          ],
+          "orders_id_seq": [
+            2,
+            true
+          ],
+          "product_variants_id_seq": [
+            4,
+            true
+          ],
+          "products_id_seq": [
+            3,
+            true
+          ],
+          "users_id_seq": [
+            3,
+            true
+          ]
+        }
+      },
+      "backup_file": "D:\\Projects\\_outputs\\petshop-backend-review\\work\\fixed\\petshop-api\\work\\container-validation\\database-7809e526.dump",
+      "restore_database": "petshop_restore_test_749c75d8"
+    },
+    {
+      "step": "restore_nonempty_rejected",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "output": "{\"event\": \"database_operation_failed\", \"reason\": \"Restore requires a separate empty database\"}\n"
+    },
+    {
+      "step": "rejected_restore_preserves_target",
+      "passed": true
+    },
+    {
+      "step": "restore_source_rejected",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "output": "{\"event\": \"database_operation_failed\", \"reason\": \"Restore target must differ from the source database\"}\n"
+    },
+    {
+      "step": "rejected_restore_preserves_source",
+      "passed": true
+    }
+  ]
+}

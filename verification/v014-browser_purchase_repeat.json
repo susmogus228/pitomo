@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "id": "repeat_preview_current_price",
+      "pass": true
+    },
+    {
+      "id": "repeat_409_no_write_requires_reconfirm",
+      "pass": true
+    },
+    {
+      "id": "repeat_dialog_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "repeat_success_current_price_no_charge",
+      "pass": true
+    },
+    {
+      "id": "repeat_lost_response_key_saved",
+      "pass": true
+    },
+    {
+      "id": "repeat_reload_retry_same_key_and_fingerprint",
+      "pass": true
+    },
+    {
+      "id": "repeat_retry_no_duplicate",
+      "pass": true
+    },
+    {
+      "id": "repeat_confirmed_key_cleared",
+      "pass": true
+    },
+    {
+      "id": "history_repeat_buttons_outside_links",
+      "pass": true
+    },
+    {
+      "id": "no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "screenshots": [
+    "purchase-repeat-desktop.png",
+    "purchase-repeat-mobile.png"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "id": "fixture_stock_ready",
+      "pass": true
+    },
+    {
+      "id": "guest_add_without_login",
+      "pass": true
+    },
+    {
+      "id": "guest_reload_quantity",
+      "pass": true
+    },
+    {
+      "id": "guest_photo_renders",
+      "pass": true
+    },
+    {
+      "id": "guest_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "lost_merge_receipt_kept",
+      "pass": true
+    },
+    {
+      "id": "merge_retry_same_key",
+      "pass": true,
+      "requests": 2
+    },
+    {
+      "id": "merge_no_duplicate_preserves_existing",
+      "pass": true
+    },
+    {
+      "id": "merge_partial_remaining",
+      "pass": true
+    },
+    {
+      "id": "undo_current_stock_partial",
+      "pass": true
+    },
+    {
+      "id": "move_to_favorites_atomic",
+      "pass": true
+    },
+    {
+      "id": "logout_private_cart_hidden",
+      "pass": true
+    },
+    {
+      "id": "confirmed_remaining_paused_on_reload",
+      "pass": true
+    },
+    {
+      "id": "no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "screenshots": [
+    "purchase-guest-desktop.png",
+    "purchase-guest-mobile.png",
+    "purchase-merge-partial-mobile.png"
+  ]
+}

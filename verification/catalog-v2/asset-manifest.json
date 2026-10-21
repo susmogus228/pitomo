@@ -1,0 +1,222 @@
+{
+  "generator": "Built-in imagegen",
+  "generated": [
+    {
+      "id": "dog-food",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A matte ivory and cobalt blue DOG FOOD pouch, a small black hand-drawn dog portrait, brand ПИТОМО in rounded bold sans-serif. Only two printed words ПИТОМО and КОРМ. No other text, no claims, no badges, no registration symbol.",
+      "path": "frontend/public/media/products/v2/dog-food.webp"
+    },
+    {
+      "id": "cat-feather-toy",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A cat teaser wand: slim light wood rod with a cobalt cotton string and three natural cream and brown feathers, curled into a compact square composition. No text.",
+      "path": "frontend/public/media/products/v2/cat-feather-toy.webp"
+    },
+    {
+      "id": "cat-treats",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A small ivory matte stand-up pouch of cat treats, cobalt top band, simple black hand-drawn cat face. Only text ПИТОМО in rounded bold sans-serif and ЛАКОМСТВО. No other text or claims.",
+      "path": "frontend/public/media/products/v2/cat-treats.webp"
+    },
+    {
+      "id": "cat-wood-litter",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A kraft paper bag of wooden cat litter pellets with a small pile of light brown cylindrical wood pellets beside it. Cobalt blue rectangular unlettered label. No text.",
+      "path": "frontend/public/media/products/v2/cat-wood-litter.webp"
+    },
+    {
+      "id": "cat-carrier",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An empty pet carrier for a cat, ivory molded plastic body, cobalt blue top handle and steel grille front door, vents on sides, three-quarter view. No animals, no text.",
+      "path": "frontend/public/media/products/v2/cat-carrier.webp"
+    },
+    {
+      "id": "dog-ball",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One sturdy round cobalt blue rubber ball for dogs with simple subtle ribbed texture. No rope, no feathers, no text.",
+      "path": "frontend/public/media/products/v2/dog-ball.webp"
+    },
+    {
+      "id": "dog-water-bowl",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One broad stainless steel water bowl with brushed metal finish and a thin dark anti-slip ring base, viewed from slight elevated three-quarter angle. No text.",
+      "path": "frontend/public/media/products/v2/dog-water-bowl.webp"
+    },
+    {
+      "id": "dog-leash",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A cobalt blue woven nylon dog leash rolled loosely into a compact spiral, metal snap-hook and loop handle clearly visible. No text.",
+      "path": "frontend/public/media/products/v2/dog-leash.webp"
+    },
+    {
+      "id": "dog-brush",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A pet grooming brush with ivory ergonomic handle, cobalt oval backing and fine rounded metal bristles. One object, slight three-quarter angle. No text.",
+      "path": "frontend/public/media/products/v2/dog-brush.webp"
+    },
+    {
+      "id": "dog-treats",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A small ivory and cobalt pouch for dog treats, simple black hand-drawn dog face, a few short brown chew sticks beside it. Only brand ПИТОМО in rounded bold sans-serif and ЛАКОМСТВО. No other text or claims.",
+      "path": "frontend/public/media/products/v2/dog-treats.webp"
+    },
+    {
+      "id": "budgie-seed",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An ivory matte bird seed pouch with cobalt top and a small black ink illustration of a budgerigar, some mixed small seeds visible through a tiny bottom window. Only text ПИТОМО in rounded bold sans-serif. No other text or claims.",
+      "path": "frontend/public/media/products/v2/budgie-seed.webp"
+    },
+    {
+      "id": "bird-swing",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A small bird cage swing: natural wood perch hanging from a slender stainless U-shaped frame with a top hook and two natural wooden beads. No birds, no text.",
+      "path": "frontend/public/media/products/v2/bird-swing.webp"
+    },
+    {
+      "id": "budgie-nest-box",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An empty compact unfinished pale wood nesting box for budgerigars, round front entry hole, tiny perch under hole, hinged top, square construction. No animals, no text.",
+      "path": "frontend/public/media/products/v2/budgie-nest-box.webp"
+    },
+    {
+      "id": "bird-drinker",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A bird cage water drinker with a clear cylindrical reservoir and cobalt blue narrow trough base and clip, one compact object. No text.",
+      "path": "frontend/public/media/products/v2/bird-drinker.webp"
+    },
+    {
+      "id": "hamster-paper-bedding",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A kraft paper bag with window showing soft cream paper bedding flakes, small pile of crinkled paper flakes beside it, cobalt rectangular label, no text.",
+      "path": "frontend/public/media/products/v2/hamster-paper-bedding.webp"
+    },
+    {
+      "id": "isopod-feeding-dish",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One tiny very flat round ivory ceramic feeding dish, almost plate-like with extremely low rim and subtle cobalt dot on edge. No food, no animals, no text.",
+      "path": "frontend/public/media/products/v2/isopod-feeding-dish.webp"
+    },
+    {
+      "id": "glass-terrarium",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An empty cubic glass terrarium with slim matte-black frame, fine black mesh ventilated top, two front doors, no decoration, no substrate, no animals, no text. Product studio cutout, all edges visible.",
+      "path": "frontend/public/media/products/v2/glass-terrarium.webp"
+    },
+    {
+      "id": "hamster-tunnel",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A short natural cork tunnel for a hamster, hollow cylindrical bark tube lying diagonally with both openings evident, no animal, no text.",
+      "path": "frontend/public/media/products/v2/hamster-tunnel.webp"
+    },
+    {
+      "id": "terrarium-mister",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One manual clear plastic spray bottle, translucent ivory trigger spray head with cobalt nozzle, visibly empty, compact 500ml proportions. No label or text.",
+      "path": "frontend/public/media/products/v2/terrarium-mister.webp"
+    },
+    {
+      "id": "paludarium-ramp",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One low gently sloping paludarium platform made of warm gray natural-looking resin stone, textured broad ramp surface leading to a small flat top, empty, no water, no animals, no text.",
+      "path": "frontend/public/media/products/v2/paludarium-ramp.webp"
+    },
+    {
+      "id": "rodent-drinker",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A clear rodent drinking bottle with cobalt cap, metal drinking spout angled down and small wire cage attachment, no text.",
+      "path": "frontend/public/media/products/v2/rodent-drinker.webp"
+    },
+    {
+      "id": "aquarium-net",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A small aquarium fish net with rectangular cobalt blue fine mesh head, thin metal frame and short straight dark handle, angled diagonally to fit square. No fish, no text.",
+      "path": "frontend/public/media/products/v2/aquarium-net.webp"
+    },
+    {
+      "id": "bird-bath",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One empty shallow ivory plastic clip-on bird bath for a cage with cobalt blue rim, small round-corner rectangular tray and two attachment hooks. No birds, no text.",
+      "path": "frontend/public/media/products/v2/bird-bath.webp"
+    },
+    {
+      "id": "terrarium-probe-thermometer",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A compact digital terrarium thermometer, ivory rectangular body, small gray LCD showing 24.0°C, black wire neatly coiled with metal probe visible, cobalt small button. No other text.",
+      "path": "frontend/public/media/products/v2/terrarium-probe-thermometer.webp"
+    },
+    {
+      "id": "aquarium-sponge-filter",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One black double-sponge aquarium filter with two cylindrical foam elements, clear uplift tube and elbow outlet, cobalt small connector, no aquarium/no animals, no text.",
+      "path": "frontend/public/media/products/v2/aquarium-sponge-filter.webp"
+    },
+    {
+      "id": "hamster-house",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One small pale unfinished wooden hamster shelter house, low rectangular body, flat removable roof and round arched front entrance, no animals, no text.",
+      "path": "frontend/public/media/products/v2/hamster-house.webp"
+    },
+    {
+      "id": "aquarium-water-tests",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An ivory cylindrical tube of aquarium water test strips with cobalt lid, one white test strip with six small colored reagent squares next to the tube. Blank minimal label, no text, no measurement claims.",
+      "path": "frontend/public/media/products/v2/aquarium-water-tests.webp"
+    },
+    {
+      "id": "bird-millet",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A small natural bundle of golden millet seed sprays, tied loosely with one thin cobalt blue cotton band. Distinct grain clusters on stalks, no packaging, no birds, no text.",
+      "path": "frontend/public/media/products/v2/bird-millet.webp"
+    },
+    {
+      "id": "reptile-shallow-bowl",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One very shallow wide terrarium water dish with a textured natural sandstone-colored exterior, smooth ivory interior and low easy-exit ramp at one edge. Empty, no animals, no text.",
+      "path": "frontend/public/media/products/v2/reptile-shallow-bowl.webp"
+    },
+    {
+      "id": "observation-container",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An empty clear rectangular plastic temporary observation container with a cobalt blue ventilated snap-on lid, small clear hinged feeding hatch, top handle. No animals, no substrate, no text.",
+      "path": "frontend/public/media/products/v2/observation-container.webp"
+    },
+    {
+      "id": "isopod-food",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A kraft paper pouch of fine leaf-based isopod food, cobalt top band and ivory label with a small black hand-drawn woodlouse illustration, no spiders. Only text ПИТОМО in rounded bold sans-serif, no other text or claims.",
+      "path": "frontend/public/media/products/v2/isopod-food.webp"
+    },
+    {
+      "id": "rabbit-plantain",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A small kraft paper window pouch containing crinkled dried plantain leaves, a few dried leaves in front, ivory label with small black rabbit silhouette and cobalt band. No text.",
+      "path": "frontend/public/media/products/v2/rabbit-plantain.webp"
+    },
+    {
+      "id": "cork-bark",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One natural uneven flat curved slab of cork bark, warm brown rugged porous texture, lying diagonally, complete isolated object. No text.",
+      "path": "frontend/public/media/products/v2/cork-bark.webp"
+    },
+    {
+      "id": "aquatic-turtle-food",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A squat ivory food jar with cobalt lid, simple black ink aquatic turtle illustration on blank label, a few dark brown pellets beside it. Only text ПИТОМО in rounded bold sans-serif. No additional text or claims.",
+      "path": "frontend/public/media/products/v2/aquatic-turtle-food.webp"
+    },
+    {
+      "id": "axolotl-pellets",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An ivory cylindrical food jar with cobalt lid and simple black ink axolotl illustration showing feathery external gills on label, a few small brown sinking pellets beside it. Only brand ПИТОМО in rounded bold sans-serif, no other text.",
+      "path": "frontend/public/media/products/v2/axolotl-pellets.webp"
+    },
+    {
+      "id": "fish-flakes",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: A short ivory cylindrical fish food jar with cobalt lid, simple black ink fish drawing on label, a few thin colorful dried flakes beside it. Only text ПИТОМО in rounded bold sans-serif, no other text or claims.",
+      "path": "frontend/public/media/products/v2/fish-flakes.webp"
+    },
+    {
+      "id": "amphibian-hygrometer",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One compact digital terrarium hygrometer, square ivory body with gray LCD displaying 65% and a tiny water drop symbol, small cobalt button. No other text.",
+      "path": "frontend/public/media/products/v2/amphibian-hygrometer.webp"
+    },
+    {
+      "id": "aquarium-cave",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One terracotta ceramic aquarium cave ornament, rounded smooth terracotta dome with a circular side entrance, empty, no fish or plants, no text.",
+      "path": "frontend/public/media/products/v2/aquarium-cave.webp"
+    },
+    {
+      "id": "coco-substrate",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One rectangular compressed coconut coir substrate brick wrapped with a simple ivory paper band and small cobalt square, loose coir fibers visible at edges. No text.",
+      "path": "frontend/public/media/products/v2/coco-substrate.webp"
+    },
+    {
+      "id": "reptile-hide",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: An empty low natural stone-textured reptile hide, warm gray-brown rounded hollow rock shape with one wide entrance, no animals, no text.",
+      "path": "frontend/public/media/products/v2/reptile-hide.webp"
+    },
+    {
+      "id": "amphibian-hide",
+      "prompt": "Use case: product-mockup. One premium Pitomo pet shop catalogue product, centered square composition with 12% clear padding around the entire object. Photorealistic clean studio still life, tactile matte materials, soft diffuse light, quiet minimal design, ivory / natural material / cobalt-blue accent palette. True transparent background. Complete object, no crop, no surrounding scene, no decorative plants, no watermark. Do not invent extra words, health claims or badges. Subject: One empty smooth ivory ceramic dome shelter for a terrarium, low rounded shape with large smooth side entrance, no sharp edges, no animals, no text.",
+      "path": "frontend/public/media/products/v2/amphibian-hide.webp"
+    }
+  ],
+  "reused": [
+    "cat-food",
+    "cat-ceramic-bowl",
+    "rabbit-hay",
+    "reptile-bark-substrate",
+    "glass-aquarium"
+  ],
+  "aliases": {
+    "amphibian-water-dish": "reptile-shallow-bowl",
+    "invertebrate-hygrometer": "amphibian-hygrometer"
+  },
+  "export": "RGBA WebP, maximum 720px, quality 86; no creative edits during encoding"
+}

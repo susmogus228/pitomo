@@ -1,0 +1,35 @@
+services:
+  web:
+    image: ${PETSHOP_WEB_IMAGE:-pitomo-web:0.14.0}
+    build:
+      context: ./frontend
+    ports:
+      - "127.0.0.1:${PETSHOP_WEB_PORT:-8080}:8080"
+    environment:
+      PETSHOP_PUBLIC_HOST: ${PETSHOP_PUBLIC_HOST:-}
+      PETSHOP_PUBLIC_ORIGIN: ${PETSHOP_PUBLIC_ORIGIN:-}
+      PETSHOP_SECURE_COOKIES: ${PETSHOP_SECURE_COOKIES:-false}
+    volumes:
+      - petshop_review_photos:/srv/pitomo/reviews:ro
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/ready"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

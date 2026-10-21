@@ -1,0 +1,167 @@
+{
+  "version": "0.7.1-windows",
+  "date": "2026-09-29",
+  "pytest": {
+    "tests": 201,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "postgresql_cases": 16,
+  "operations_tests": 7,
+  "docker_desktop": "4.93.0.240920",
+  "engine": "29.8.1",
+  "docker_restart_cycles": [
+    {
+      "cycle": 1,
+      "started": "2026-09-29T10:33:25.4908873+05:00",
+      "finished": "2026-09-29T10:34:24.7634410+05:00",
+      "passed": true,
+      "engine": "29.8.1",
+      "runtimeDirectoriesModified": false
+    },
+    {
+      "cycle": 2,
+      "started": "2026-09-29T10:34:24.9526043+05:00",
+      "finished": "2026-09-29T10:34:46.7492998+05:00",
+      "passed": true,
+      "engine": "29.8.1",
+      "runtimeDirectoriesModified": false
+    },
+    {
+      "cycle": 3,
+      "started": "2026-09-29T10:34:46.7552224+05:00",
+      "finished": "2026-09-29T10:35:06.0254102+05:00",
+      "passed": true,
+      "engine": "29.8.1",
+      "runtimeDirectoriesModified": false
+    }
+  ],
+  "docker_mcp": {
+    "tools": 165,
+    "read_only_checks": "passed"
+  },
+  "container_checks": {
+    "smoke": {
+      "passed": true,
+      "at": "2026-09-29T05:39:53.071869+00:00",
+      "steps": [
+        "compose_up",
+        "http_baseline",
+        "bootstrap_admin",
+        "http_exercise",
+        "compose_api_restart",
+        "compose_api_ready",
+        "http_persistence"
+      ]
+    },
+    "pytest": {
+      "passed": true,
+      "at": "2026-09-29T05:42:24.557092+00:00",
+      "steps": [
+        "pytest_all_postgresql"
+      ]
+    },
+    "backup": {
+      "passed": true,
+      "at": "2026-09-29T05:43:07.151202+00:00",
+      "steps": [
+        "compose_full_stop_preserve_volumes",
+        "compose_full_start",
+        "http_persistence",
+        "database_backup",
+        "backup_overwrite_rejected",
+        "rejected_backup_preserves_file",
+        "database_restore_empty",
+        "restored_all_public_table_counts_and_hashes",
+        "backup_restore_reconciliation",
+        "restore_nonempty_rejected",
+        "rejected_restore_preserves_target",
+        "restore_source_rejected",
+        "rejected_restore_preserves_source"
+      ]
+    },
+    "rollback": {
+      "passed": true,
+      "at": "2026-09-29T05:43:29.301640+00:00",
+      "steps": [
+        "api_id_before_release",
+        "image_before_release",
+        "tag_immutable_validation_baseline",
+        "build_unhealthy_candidate",
+        "release_failure_rollback",
+        "rollback_report_confirms_success",
+        "rollback_report_same_immutable_image",
+        "api_id_after_rollback",
+        "image_after_rollback",
+        "rollback_restores_immutable_image",
+        "rollback_replaced_container",
+        "http_persistence"
+      ]
+    },
+    "runtime": {
+      "passed": true,
+      "at": "2026-09-29T05:44:05.351421+00:00",
+      "steps": [
+        "runtime_api_id",
+        "runtime_user",
+        "runtime_readonly",
+        "runtime_cap_drop",
+        "runtime_security_opt",
+        "runtime_ports",
+        "runtime_health",
+        "runtime_image",
+        "runtime_nonroot",
+        "runtime_readonly_root",
+        "runtime_drops_all_capabilities",
+        "runtime_no_new_privileges",
+        "runtime_api_loopback_only",
+        "runtime_healthy_after_rollback",
+        "runtime_pip_check",
+        "validated_build_inputs"
+      ]
+    },
+    "stop": {
+      "passed": true,
+      "at": "2026-09-29T05:44:07.351632+00:00",
+      "steps": [
+        "compose_stop_preserve_volumes",
+        "compose_final_state",
+        "validation_stack_stopped"
+      ]
+    }
+  },
+  "launcher": {
+    "powershell": "5.1.22621.4391",
+    "helper_checks": 9,
+    "runtime_checks": 12,
+    "checks": [
+      "Start exits successfully",
+      "Repeated start keeps exactly three project containers",
+      "Repeated start preserves configuration",
+      "Diagnose exits successfully",
+      "Stop exits successfully",
+      "Stop works despite invalid .env",
+      "Start exits successfully",
+      "Stop/start preserves configuration",
+      "Stop/start preserves database volume",
+      "Diagnostics redact credentials",
+      "Test obtains launcher lock",
+      "Concurrent start is refused"
+    ],
+    "bat_execution": "exit 0"
+  },
+  "ruff": "passed",
+  "pip_check": "passed",
+  "powershell_parse": "passed",
+  "reviews": {
+    "implementation": "three P2 findings fixed; stop/redaction verified",
+    "security_privacy": "pass; static review and runtime evidence"
+  },
+  "frontend": "static concept reviewed on desktop/mobile; awaiting user approval; production frontend not implemented",
+  "limits": [
+    "Fresh Windows WSL installation not replayed",
+    "Remote CI and public deployment not run"
+  ],
+  "historical_evidence": "backend-baseline-0.7.1.json is the earlier pre-Docker validation"
+}

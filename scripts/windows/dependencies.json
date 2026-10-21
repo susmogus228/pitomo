@@ -1,0 +1,10 @@
+{
+  "dockerDesktop": {
+    "version": "4.93.0",
+    "architecture": "AMD64",
+    "url": "https://desktop.docker.com/win/main/amd64/240920/Docker%20Desktop%20Installer.exe",
+    "sha256": "c139124c9cf71477dc565c3c0ea5a18f90b93d68ebe9aaa848a065960416c0bc",
+    "signerPattern": "(^|,\\s*)O=Docker Inc(,|$)"
+  },
+  "minimumWslVersion": "2.1.5"
+}

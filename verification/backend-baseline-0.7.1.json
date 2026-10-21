@@ -1,0 +1,37 @@
+{
+  "version": "0.7.1",
+  "date": "2026-09-29",
+  "pytest": {
+    "tests": 201,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "operations_tests": {
+    "tests": 7,
+    "failures": 0
+  },
+  "postgresql": "16.15; real database with isolated test schemas",
+  "http_smoke": {
+    "status": "passed",
+    "checks": [
+      "empty_init_and_production_docs",
+      "checkout_idempotency_preserves_new_cart",
+      "admin_permissions_metrics_immutable_order",
+      "restart_persistence_and_token",
+      "order_history_survives_catalog_delete"
+    ],
+    "database": "PostgreSQL16",
+    "transport": "real loopback HTTP",
+    "server_restarts": 1
+  },
+  "ruff": "passed",
+  "pip_check": "passed",
+  "dependency_audit": {
+    "runtime_known_vulnerabilities": 0,
+    "dev_known_vulnerabilities": 0
+  },
+  "docker_compose_config": "passed for production and dev",
+  "docker_build_start_rollback": "not run: local Docker Desktop engine failed to start",
+  "remote_ci": "workflow prepared; not run remotely"
+}

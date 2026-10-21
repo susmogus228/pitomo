@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="3.081" timestamp="2026-10-13T09:35:09.979820+05:00" hostname="UMAY-LOGIST-003"><testcase classname="tests.test_catalog_v2" name="test_repository_add_does_not_duplicate_loaded_variants" time="0.281"><failure message="assert [1, 1, 2, 2] == [1, 2]&#10;  &#10;  At index 1 diff: 1 != 2&#10;  Left contains 2 more items, first extra item: 2&#10;  Use -v to get more diff">db = &lt;app.db.session.Database object at 0x00000255B8564140&gt;
+
+    def test_repository_add_does_not_duplicate_loaded_variants(db):
+        product = Accessory(1, 'Toy', 'cat', 'Brand', [
+            ProductVariant(1, 'TOY-SMALL', 'Small', '10', 2),
+            ProductVariant(2, 'TOY-LARGE', 'Large', '20', 3)], 'Cotton')
+        with db.session_factory.begin() as session:
+            repo = SQLAlchemyProductRepository(session)
+            repo.add(product)
+            row = session.get(ProductORM, product.id)
+&gt;           assert [variant.id for variant in row.variants] == [1, 2]
+E           assert [1, 1, 2, 2] == [1, 2]
+E             
+E             At index 1 diff: 1 != 2
+E             Left contains 2 more items, first extra item: 2
+E             Use -v to get more diff
+
+tests\test_catalog_v2.py:201: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,82 @@
+[
+  {
+    "source": "hero-cat.png",
+    "file": "hero-cat-640.webp",
+    "width": 640,
+    "height": 427,
+    "source_bytes": 2069590,
+    "bytes": 66970
+  },
+  {
+    "source": "hero-cat.png",
+    "file": "hero-cat-1280.webp",
+    "width": 1280,
+    "height": 853,
+    "source_bytes": 2069590,
+    "bytes": 224688
+  },
+  {
+    "source": "hero-cat.png",
+    "file": "hero-cat-1600.webp",
+    "width": 1536,
+    "height": 1024,
+    "source_bytes": 2069590,
+    "bytes": 281790
+  },
+  {
+    "source": "pets-grid.png",
+    "file": "pets-grid-1792.webp",
+    "width": 1774,
+    "height": 887,
+    "source_bytes": 1491785,
+    "bytes": 359878
+  },
+  {
+    "source": "cat-register.png",
+    "file": "cat-register-640.webp",
+    "width": 640,
+    "height": 960,
+    "source_bytes": 2688756,
+    "bytes": 201760
+  },
+  {
+    "source": "cat-register.png",
+    "file": "cat-register-1280.webp",
+    "width": 1024,
+    "height": 1536,
+    "source_bytes": 2688756,
+    "bytes": 419484
+  },
+  {
+    "source": "cat-register.png",
+    "file": "cat-register-1600.webp",
+    "width": 1024,
+    "height": 1536,
+    "source_bytes": 2688756,
+    "bytes": 419484
+  },
+  {
+    "source": "cat-login.png",
+    "file": "cat-login-640.webp",
+    "width": 640,
+    "height": 427,
+    "source_bytes": 2359687,
+    "bytes": 76940
+  },
+  {
+    "source": "cat-login.png",
+    "file": "cat-login-1280.webp",
+    "width": 1280,
+    "height": 853,
+    "source_bytes": 2359687,
+    "bytes": 258298
+  },
+  {
+    "source": "cat-login.png",
+    "file": "cat-login-1600.webp",
+    "width": 1536,
+    "height": 1024,
+    "source_bytes": 2359687,
+    "bytes": 327212
+  }
+]

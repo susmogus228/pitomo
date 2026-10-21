@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "id": "live_catalog_available",
+      "pass": true
+    },
+    {
+      "id": "live_guest_cart_without_login",
+      "pass": true
+    },
+    {
+      "id": "live_cart_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "live_guest_reload",
+      "pass": true
+    },
+    {
+      "id": "live_no_account_writes",
+      "pass": true,
+      "writes": []
+    },
+    {
+      "id": "live_no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "real_store_database_writes": false
+}

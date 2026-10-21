@@ -1,0 +1,52 @@
+{
+  "release": "Pitomo 0.9.0",
+  "date": "2026-09-30",
+  "preview_url": "http://127.0.0.1:8081",
+  "schema": "0008_v090",
+  "backend": {
+    "unit_passed": 235,
+    "unit_skipped": 22,
+    "postgresql_passed": 22,
+    "ruff": "passed"
+  },
+  "frontend": {
+    "unit_passed": 46,
+    "typecheck": "passed",
+    "build": "passed"
+  },
+  "http_smoke": {
+    "customer_checks": 22,
+    "admin_delivery_discount_payment_checks": 13,
+    "live_vet_lookup": "200; 3 clinics at synthetic Astana coordinates"
+  },
+  "browser": [
+    "public reviews and hit catalog",
+    "veterinary map tiles and manual point search",
+    "admin order list and delivery point detail",
+    "admin discount search and form",
+    "desktop and mobile layouts without horizontal overflow"
+  ],
+  "geo_privacy": {
+    "nginx_access_log_omits_query": true,
+    "uvicorn_access_log_disabled": true,
+    "nginx_per_client_limit": "first four invalid requests returned 422; fifth and sixth returned 429"
+  },
+  "data_preservation": {
+    "source_backup_verified": true,
+    "staging_copy_restored_and_migrated": true,
+    "original_local_database_unchanged": true
+  },
+  "docker_staging": {
+    "api": "healthy",
+    "postgres": "healthy",
+    "web": "healthy"
+  },
+  "limits": [
+    "Demo payment only; no real money is charged",
+    "Receipt is confirmed by the buyer, not a carrier",
+    "Delivery coordinates are recorded but no courier dispatch, routing or pricing is integrated",
+    "Clinic data depends on OpenStreetMap/Overpass availability",
+    "No public hosting or clean Windows installation test"
+  ],
+  "historical_report": "results-v081.json"
+}

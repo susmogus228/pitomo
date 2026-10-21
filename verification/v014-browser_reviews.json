@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "id": "review_purchase_badges",
+      "pass": true
+    },
+    {
+      "id": "review_edited_badge",
+      "pass": true
+    },
+    {
+      "id": "review_photo_filter",
+      "pass": true
+    },
+    {
+      "id": "review_uploaded_photo",
+      "pass": true
+    },
+    {
+      "id": "review_sort",
+      "pass": true
+    },
+    {
+      "id": "review_distribution",
+      "pass": true
+    },
+    {
+      "id": "report_visible_until_decision",
+      "pass": true
+    },
+    {
+      "id": "reviews_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "admin_report_queue",
+      "pass": true
+    },
+    {
+      "id": "admin_report_resolved",
+      "pass": true
+    },
+    {
+      "id": "admin_hidden_public_count",
+      "pass": true
+    },
+    {
+      "id": "admin_history_reason",
+      "pass": true
+    },
+    {
+      "id": "moderation_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "admin_restore",
+      "pass": true
+    },
+    {
+      "id": "hidden_photo_404",
+      "pass": true
+    },
+    {
+      "id": "restored_photo_200",
+      "pass": true
+    },
+    {
+      "id": "reviews_no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "fixture_only": true
+}

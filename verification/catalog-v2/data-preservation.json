@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "before": {
+    "products": 24,
+    "product_variants": 24,
+    "orders": 4,
+    "order_items": 4,
+    "users": 3,
+    "cart_items": 0,
+    "favorites": 2
+  },
+  "after": {
+    "products": 48,
+    "product_variants": 48,
+    "orders": 4,
+    "order_items": 4,
+    "users": 3,
+    "cart_items": 0,
+    "favorites": 2
+  },
+  "existing_variants_prices_stock_preserved": true,
+  "orders_carts_favorites_hashes_match": true,
+  "scope": "Comparison after migration and catalog refresh, before new synthetic browser/HTTP scenarios"
+}

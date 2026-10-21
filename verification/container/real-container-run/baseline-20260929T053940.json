@@ -1,0 +1,197 @@
+{
+  "phase": "baseline",
+  "base_url": "http://127.0.0.1:18080",
+  "passed": true,
+  "error": null,
+  "created_at": "2026-09-29T05:39:40.828751+00:00",
+  "events": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 47.0,
+      "request_id": "7efb5a85d83c41eea71f056253368c28"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "postgres_storage",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/ready",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 32.0,
+      "request_id": "83f553e6d94145c9abf2a7684cb2fd94"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "schema_ready",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products",
+      "expected": 200,
+      "status": 200,
+      "duration_ms": 46.0,
+      "request_id": "ee534065ba9f4efc9f4816e6a108f092"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "check": "new_database_has_empty_catalog",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/docs",
+      "expected": 404,
+      "status": 404,
+      "duration_ms": 47.0,
+      "request_id": "d7e800e20e2f4d25bc3dc23a6a99f0d8"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/redoc",
+      "expected": 404,
+      "status": 404,
+      "duration_ms": 0.0,
+      "request_id": "8260dae7ce73494e9ab20f1eacfc66ad"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/openapi.json",
+      "expected": 404,
+      "status": 404,
+      "duration_ms": 0.0,
+      "request_id": "23dcb3d4044c408590f0ecbbd936f5ae"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me",
+      "expected": 401,
+      "status": 401,
+      "duration_ms": 0.0,
+      "request_id": "99ad50c0c186442ea5916c7b52d1ad63"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/cart",
+      "expected": 401,
+      "status": 401,
+      "duration_ms": 16.0,
+      "request_id": "91c113cdbbdb417ea2cb30c92bacb55f"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders",
+      "expected": 401,
+      "status": 401,
+      "duration_ms": 0.0,
+      "request_id": "2a30b46918f841d5ad20e6eb6481f5c1"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/users",
+      "expected": 401,
+      "status": 401,
+      "duration_ms": 0.0,
+      "request_id": "2b6ca546f38e48a9a828ade17896b73a"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    },
+    {
+      "method": "GET",
+      "path": "/metrics",
+      "expected": 401,
+      "status": 401,
+      "duration_ms": 16.0,
+      "request_id": "3d24d89ff537482abec0589c50067726"
+    },
+    {
+      "check": "request_id_present",
+      "passed": true
+    },
+    {
+      "check": "nosniff_header",
+      "passed": true
+    }
+  ]
+}

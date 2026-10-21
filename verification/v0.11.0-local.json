@@ -1,0 +1,47 @@
+{
+  "version": "0.11.0",
+  "date": "2026-10-05",
+  "backend": {
+    "full_suite_passed": 269,
+    "full_suite_failed": 1,
+    "failure": "Isolated schema helper subprocess exceeded 30 seconds while Windows was under memory pressure",
+    "failed_test_focused_rerun": "1 passed; schema test completed without a source change",
+    "postgres_tests_skipped": 22,
+    "ruff": "passed",
+    "pip_check": "passed"
+  },
+  "frontend": {
+    "test_files": 8,
+    "tests_passed": 66,
+    "typecheck": "passed",
+    "build": "passed",
+    "browser": "Isolated SQLite preview: login, desktop and mobile admin overview, XLSX overview and filtered catalog downloads, product creation, product and variant edits, replenishment focus",
+    "complete_editor_and_mobile_browser_verification": "passed at 1440x1000 and 390x844; horizontal table overflow reproduced and fixed"
+  },
+  "windows_launcher": {
+    "recovery_relocation_and_child_memory_checks_passed": 20,
+    "actual_start_with_no_browser_exit_code": 0,
+    "actual_start_demo_products_added": 0
+  },
+  "provider": {
+    "geoapify_key_configured": false,
+    "live_geocoding_verified": false,
+    "mocked_provider_contract_tests": "11 passed"
+  },
+  "review": {
+    "admin_exports_and_geocoding_security": "No material findings in independent source and focused test review",
+    "live_production": "No public deployment; local Docker runtime checked separately"
+  },
+  "local_docker": {
+    "api_version": "0.11.0",
+    "postgres_api_and_web_health": "passed",
+    "schema_revision": "0009_v010",
+    "api_start_grace_seconds": 120,
+    "api_health_http_timeout_seconds": 5,
+    "windows_compose_wait_seconds": 300,
+    "unauthenticated_admin_export_status": 401,
+    "unauthenticated_admin_page": "redirects to login in the browser",
+    "geo_country": "kz",
+    "geo_live_provider_enabled": false
+  }
+}

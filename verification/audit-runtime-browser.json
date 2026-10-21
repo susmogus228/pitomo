@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "id": "runtime_version",
+      "pass": true
+    },
+    {
+      "id": "runtime_ready",
+      "pass": true
+    },
+    {
+      "id": "runtime_home_title",
+      "pass": true
+    },
+    {
+      "id": "runtime_search",
+      "pass": true
+    },
+    {
+      "id": "runtime_sort_label",
+      "pass": true
+    },
+    {
+      "id": "runtime_product_images",
+      "pass": true,
+      "count": 6
+    },
+    {
+      "id": "runtime_mobile_fit",
+      "pass": true
+    },
+    {
+      "id": "runtime_no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "writes_to_store": false
+}

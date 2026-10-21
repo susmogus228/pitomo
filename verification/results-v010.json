@@ -1,0 +1,53 @@
+{
+  "version": "0.10.0",
+  "date": "2026-09-30",
+  "python": {
+    "suite": "pytest -q tests --basetemp work\\pytest-v010-final --disable-warnings",
+    "total": 260,
+    "passed": 238,
+    "skipped": 22,
+    "failed": 0,
+    "junit": "test-v010-final.xml",
+    "ruff": "passed",
+    "script_unittests": 7
+  },
+  "frontend": {
+    "vitest_files": 5,
+    "vitest_passed": 50,
+    "typescript_and_vite_build": "passed"
+  },
+  "docker_preview": {
+    "project": "pitomo-v010-validation",
+    "host": "127.0.0.1",
+    "web_port": 8082,
+    "api_port": 8002,
+    "compose_config": "passed",
+    "migration_head": "0009_v010",
+    "web_and_api_ready": "passed",
+    "demo_products": 48,
+    "stock_replenishment": "20 to 23, ledger row retained product name and SKU",
+    "review_flow": "COD order, receipt, review, photo WebP, edit, rating, user reply, pinned admin reply, official admin follow-up passed",
+    "admin_access": "anonymous 401, customer 403, admin 200",
+    "foreign_host": "rejected by Nginx",
+    "media": "served by API and web; invalid names rejected"
+  },
+  "browser": {
+    "tool": "playwright-cli",
+    "widths_px": [390, 1280],
+    "catalog_rating": "visible",
+    "admin_mobile_overflow": "none at 390px",
+    "product_mobile_overflow": "none at 390px",
+    "deleted_reply": "shown as Ответ удалён",
+    "screenshots": [
+      "screenshots-v010/catalog-mobile.png",
+      "screenshots-v010/catalog-rating-card.png",
+      "screenshots-v010/admin-mobile-final.png",
+      "screenshots-v010/review-mobile-final.png"
+    ]
+  },
+  "external_deployment": {
+    "status": "not performed",
+    "reason": "No Oracle Cloud or Tailscale account was available",
+    "arm64_runtime": "not tested"
+  }
+}

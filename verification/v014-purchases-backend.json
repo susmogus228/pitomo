@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "postgresql_unique_tests": 35,
+  "failures": 0,
+  "errors": 0,
+  "sources": [
+    "verification\\v014-postgresql.xml",
+    "verification\\v014-postgresql-race.xml"
+  ],
+  "aggregation": "Full PostgreSQL run plus one subsequently added repeat race test",
+  "real_store_database_used": false,
+  "migration_sqlite": "passed; legacy users/orders/reviews/replies preserved; alembic check passed",
+  "migration_postgresql": "passed; legacy users/orders/reviews/replies preserved; alembic check passed",
+  "owned_python_ruff": "passed",
+  "notes": [
+    "Cart receipts preserve the original response snapshot; client refetches current cart",
+    "No stock reservation before checkout",
+    "Receipts have no automatic expiration cleanup"
+  ]
+}

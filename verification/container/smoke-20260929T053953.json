@@ -1,0 +1,50 @@
+{
+  "stage": "smoke",
+  "passed": true,
+  "error": null,
+  "created_at": "2026-09-29T05:39:53.071869+00:00",
+  "events": [
+    {
+      "step": "compose_up",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": " Container petshop-validation-20260929-postgres-1 Running \n Container petshop-validation-20260929-migrate-1 Recreate \n Container petshop-validation-20260929-migrate-1 Recreated \n Container petshop-validation-20260929-api-1 Recreate \n Container petshop-validation-20260929-api-1 Recreated \n Container petshop-validation-20260929-postgres-1 Waiting \n Container petshop-validation-20260929-postgres-1 Healthy \n Container petshop-validation-20260929-migrate-1 Starting \n Container petshop-validation-20260929-migrate-1 Started \n Container petshop-validation-20260929-migrate-1 Waiting \n Container petshop-validation-20260929-migrate-1 Exited \n Container petshop-validation-20260929-api-1 Starting \n Container petshop-validation-20260929-api-1 Started \n Container petshop-validation-20260929-postgres-1 Waiting \n Container petshop-validation-20260929-migrate-1 Waiting \n Container petshop-validation-20260929-api-1 Waiting \n Container petshop-validation-20260929-migrate-1 Exited \n Container petshop-validation-20260929-postgres-1 Healthy \n Container petshop-validation-20260929-api-1 Healthy \n"
+    },
+    {
+      "step": "http_baseline",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"phase\": \"baseline\", \"passed\": true, \"events\": 36, \"evidence\": \"D:\\\\Projects\\\\_outputs\\\\petshop-backend-review\\\\work\\\\fixed\\\\petshop-api\\\\work\\\\container-validation\\\\real-container-run\\\\baseline-20260929T053940.json\", \"error\": null}\n"
+    },
+    {
+      "step": "bootstrap_admin",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "Admin created: id=1\n"
+    },
+    {
+      "step": "http_exercise",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"phase\": \"exercise\", \"passed\": true, \"events\": 256, \"evidence\": \"D:\\\\Projects\\\\_outputs\\\\petshop-backend-review\\\\work\\\\fixed\\\\petshop-api\\\\work\\\\container-validation\\\\real-container-run\\\\exercise-20260929T053942.json\", \"error\": null}\n"
+    },
+    {
+      "step": "compose_api_restart",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": " Container petshop-validation-20260929-api-1 Restarting \n Container petshop-validation-20260929-api-1 Started \n"
+    },
+    {
+      "step": "compose_api_ready",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": " Container petshop-validation-20260929-api-1 Running \n Container petshop-validation-20260929-api-1 Waiting \n Container petshop-validation-20260929-api-1 Healthy \n"
+    },
+    {
+      "step": "http_persistence",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"phase\": \"persistence\", \"passed\": true, \"events\": 32, \"evidence\": \"D:\\\\Projects\\\\_outputs\\\\petshop-backend-review\\\\work\\\\fixed\\\\petshop-api\\\\work\\\\container-validation\\\\real-container-run\\\\persistence-20260929T053952.json\", \"error\": null}\n"
+    }
+  ]
+}

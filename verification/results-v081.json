@@ -1,0 +1,98 @@
+{
+  "release": "Pitomo 0.8.1",
+  "date": "2026-09-29",
+  "url": "http://127.0.0.1:8080",
+  "schema": "0006_v081",
+  "backend": {
+    "non_postgresql_before_final_readiness_fix": 226,
+    "final_targeted_readiness_tests": 3,
+    "note": "Final targeted run includes the added real create_app/Alembic-head regression; full suite was not repeated after the constant-only runtime fix.",
+    "postgresql": 22,
+    "ruff": "passed"
+  },
+  "frontend": {
+    "unit_tests_passed": 43,
+    "typecheck": "passed",
+    "build": "passed"
+  },
+  "live_http": {
+    "catalog_checks": 158,
+    "auth_cart_order_checks": 42,
+    "passed": true
+  },
+  "catalog": {
+    "products": 48,
+    "animal_groups": 8,
+    "product_kinds": 10,
+    "webp_files": 48,
+    "webp_bytes": 2871978
+  },
+  "data_preservation": {
+    "passed": true,
+    "before": {
+      "products": 24,
+      "product_variants": 24,
+      "orders": 4,
+      "order_items": 4,
+      "users": 3,
+      "cart_items": 0,
+      "favorites": 2
+    },
+    "after": {
+      "products": 48,
+      "product_variants": 48,
+      "orders": 4,
+      "order_items": 4,
+      "users": 3,
+      "cart_items": 0,
+      "favorites": 2
+    },
+    "existing_variants_prices_stock_preserved": true,
+    "orders_carts_favorites_hashes_match": true,
+    "scope": "Comparison after migration and catalog refresh, before new synthetic browser/HTTP scenarios"
+  },
+  "browser": [
+    "1440px four-column catalog",
+    "1100px three-column catalog",
+    "390px two-column catalog without page overflow",
+    "desktop and mobile login/register illustrations",
+    "mobile fields aligned at identical Y",
+    "mobile dropdown link hit target and navigation fixed",
+    "filter modal opens and returns focus",
+    "pet and kind combination retained when supported; cleared when unsupported",
+    "catalog pagination",
+    "guest add-to-cart -> registration -> one item in cart",
+    "favorite saved",
+    "COD checkout and cancellation",
+    "logout and repeat login through the new form",
+    "prefers-reduced-motion sets auth cat animation to none"
+  ],
+  "launcher": {
+    "repeated_start": "passed",
+    "existing_docker_download_skipped": true,
+    "build_layers_cached": true,
+    "seed_added": 0
+  },
+  "docker": {
+    "api": "healthy",
+    "postgres": "healthy",
+    "web": "healthy",
+    "public_deployment": false
+  },
+  "review": {
+    "implementation": "pass",
+    "final_deltas": "pass",
+    "visual": "root browser inspection; independent visual reviewer unavailable"
+  },
+  "limits": [
+    "Demonstration products and payments; no real money or delivery",
+    "Public hosting and HTTPS not deployed",
+    "Clean Windows WSL installation was not repeated",
+    "No external CI run"
+  ],
+  "historical_reports": [
+    "pitomo-v0.8.0-results.json",
+    "pitomo/",
+    "container/"
+  ]
+}

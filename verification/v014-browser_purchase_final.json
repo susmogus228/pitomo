@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "id": "private_cart_logout_precondition",
+      "pass": true
+    },
+    {
+      "id": "cart_fallback_compact",
+      "pass": true
+    },
+    {
+      "id": "saved_address_select_accessible_name",
+      "pass": true
+    },
+    {
+      "id": "repeat_fallback_compact",
+      "pass": true
+    },
+    {
+      "id": "private_cart_not_copied_after_logout",
+      "pass": true
+    },
+    {
+      "id": "logout_server_session_revoked",
+      "pass": true
+    },
+    {
+      "id": "no_uncaught_errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "screenshots": [
+    "purchase-cart-final-mobile.png",
+    "purchase-repeat-final-mobile.png"
+  ]
+}

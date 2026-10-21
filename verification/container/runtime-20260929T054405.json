@@ -1,0 +1,95 @@
+{
+  "stage": "runtime",
+  "passed": true,
+  "error": null,
+  "created_at": "2026-09-29T05:44:05.351421+00:00",
+  "events": [
+    {
+      "step": "runtime_api_id",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "efc72684d0a3201c8e6f3814ac04fc4ff8a2a48c0407f8199d5fbaf769b38c18\n"
+    },
+    {
+      "step": "runtime_user",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "\"10001:10001\"\n"
+    },
+    {
+      "step": "runtime_readonly",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "true\n"
+    },
+    {
+      "step": "runtime_cap_drop",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "[\"ALL\"]\n"
+    },
+    {
+      "step": "runtime_security_opt",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "[\"no-new-privileges:true\"]\n"
+    },
+    {
+      "step": "runtime_ports",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"8000/tcp\":[{\"HostIp\":\"127.0.0.1\",\"HostPort\":\"18080\"}]}\n"
+    },
+    {
+      "step": "runtime_health",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "\"healthy\"\n"
+    },
+    {
+      "step": "runtime_image",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "\"sha256:51176b87479d218867106d3c83d113f4acd80ccc2805fc4442b2e58d5125773f\"\n"
+    },
+    {
+      "step": "runtime_nonroot",
+      "passed": true
+    },
+    {
+      "step": "runtime_readonly_root",
+      "passed": true
+    },
+    {
+      "step": "runtime_drops_all_capabilities",
+      "passed": true
+    },
+    {
+      "step": "runtime_no_new_privileges",
+      "passed": true
+    },
+    {
+      "step": "runtime_api_loopback_only",
+      "passed": true
+    },
+    {
+      "step": "runtime_healthy_after_rollback",
+      "passed": true
+    },
+    {
+      "step": "runtime_pip_check",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "No broken requirements found.\n"
+    },
+    {
+      "step": "validated_build_inputs",
+      "sha256": {
+        "Dockerfile": "ef2591057b8b40c96267e5a5ea0cd7e63f9b8a88da5e1e7c0f2d550ea725cea5",
+        "requirements-lock.txt": "faaf14966c34eb0d92306dcf6921608c323ec0fb46ab983020aa232e1fc64ed3",
+        "docker-compose.yml": "f363118fe7a5fdd5323777c4eab087e42ea831a92f92ab00f298328f4302bc36",
+        "docker-compose.dev.yml": "49078fd3e4cdbcd3ce84c69ec87dd8598c272a6fdbd612499221c9d2f4d091a3"
+      }
+    }
+  ]
+}

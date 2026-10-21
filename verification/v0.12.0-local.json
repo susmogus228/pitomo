@@ -1,0 +1,105 @@
+{
+  "version": "0.12.0",
+  "verified_date": "2026-10-07",
+  "backend": {
+    "baseline_full_suite": {
+      "passed_tests": 304,
+      "passed_subtests": 27,
+      "postgresql_deselected": 23,
+      "failures": 0,
+      "source_state": "before final consent rate-limit and sanitized validation changes"
+    },
+    "final_affected_suite": {
+      "passed": 29,
+      "postgresql_deselected": 1,
+      "failures": 0
+    },
+    "groups_overlap_do_not_sum": true,
+    "ruff": "passed",
+    "isolated_postgresql_photo_concurrency": {
+      "isolated_postgresql_photo_race": "passed",
+      "tests_passed": 1,
+      "real_store_database_used": false
+    },
+    "old_postgresql_regression_suite_rerun": false
+  },
+  "frontend": {
+    "tests_passed": 69,
+    "typescript_and_vite_build": "passed",
+    "final_docker_web_build_with_legacy_media_fix": "passed"
+  },
+  "browser": {
+    "desktop_width": 1440,
+    "mobile_width": 390,
+    "registration_initial_checkboxes_unchecked": true,
+    "registration_without_service_consent_blocked": true,
+    "registration_analytics_optional": true,
+    "profile_analytics_grant_and_withdrawal": "passed",
+    "two_photo_product_create_cover_change_and_gallery": "passed",
+    "guest_admin_route_redirected_to_login": true,
+    "synthetic_data_used_for_mutating_browser_checks": true,
+    "screenshots": [
+      "screenshots-v012/register-desktop-live-v012.png",
+      "screenshots-v012/register-mobile-live-v012.png",
+      "screenshots-v012/photos-saved-mobile.png",
+      "screenshots-v012/gallery-desktop.png",
+      "screenshots-v012/gallery-mobile.png",
+      "screenshots-v012/privacy-mobile.png",
+      "screenshots-v012/profile-mobile-v012.png"
+    ]
+  },
+  "local_runtime": {
+    "url": "http://127.0.0.1:8080/",
+    "release": "0.12.0",
+    "before_counts": {
+      "users": 7,
+      "products": 49,
+      "orders": 12
+    },
+    "after_counts": {
+      "users": 7,
+      "products": 49,
+      "orders": 12
+    },
+    "compose_healthy": true,
+    "backups_created_and_validated": true,
+    "private_environment_values_preserved": true,
+    "live_checks": {
+      "/register": "passed",
+      "/privacy": "passed",
+      "/consent": "passed",
+      "api_ready": {
+        "status": "ready",
+        "revision": "0010_v012"
+      },
+      "draft_documents_and_inactive_analytics": "passed",
+      "existing_catalog_with_gallery_fields": "passed",
+      "guest_photo_mutation_denied": "passed",
+      "new_media_guard_and_legacy_static_image": "passed",
+      "guest_cannot_read_user_consents": "passed",
+      "postgresql_migration_and_no_fictional_backfill": {
+        "revision": "0010_v012",
+        "consents": 0,
+        "product_photos": 0
+      },
+      "private_values_and_project_identity_preserved": "passed"
+    }
+  },
+  "reviewers": {
+    "legal": "warn: operator, hosting, separate geo/publication flows and operational duties remain",
+    "security": "warn: no concrete findings; initial failed reviewer launch was retried successfully",
+    "security_review_boundary": "filesystem review and focused tests; no production certification"
+  },
+  "limitations": [
+    "Operator details and document content remain draft placeholders.",
+    "No behavioral tracker or recommendation engine is connected.",
+    "Actual Kazakhstan database hosting, cross-border/geolocation choice and review publication consent remain launch requirements.",
+    "No cloud deployment or clean Windows installation was performed in this update."
+  ],
+  "artifact_boundary": "Source ZIP excludes runtime .env, user database, uploaded photos and private backups.",
+  "evidence_sha256": {
+    "final-suite.xml": "2cfce4e7b75831d2f8244a482e1869c301b5ce713aa998c8f2495e7db993f3bc",
+    "final-privacy-photos.xml": "b137a2e76d27db7ee0cc4b7b46bcc4be338ebc8337e9607d89d7082335163a07",
+    "postgresql-photos.log": "f69eec389a1146ef8408831f8457457fc3d3c3455904fcdc8ec18f9fc8b37888"
+  }
+}

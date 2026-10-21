@@ -1,0 +1,9 @@
+{
+  "release": "0.14.0",
+  "image": "pitomo-web:0.14.0",
+  "build_method": "verified-host-dist",
+  "runtime_base_and_configuration_unchanged": true,
+  "image_files_match_verified_frontend": true,
+  "files_verified": 112,
+  "index_sha256": "1d4d6692b507f3fca0cece17cd75c0e73153a7c0e67c3360a7e3134d87a12112"
+}

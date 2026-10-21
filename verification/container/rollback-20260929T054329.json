@@ -1,0 +1,72 @@
+{
+  "stage": "rollback",
+  "passed": true,
+  "error": null,
+  "created_at": "2026-09-29T05:43:29.301640+00:00",
+  "events": [
+    {
+      "step": "api_id_before_release",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "c72904f220b69feab1102db043319593fd64dc383735dfbd32c93db9d5036713\n"
+    },
+    {
+      "step": "image_before_release",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "sha256:51176b87479d218867106d3c83d113f4acd80ccc2805fc4442b2e58d5125773f\n"
+    },
+    {
+      "step": "tag_immutable_validation_baseline",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": ""
+    },
+    {
+      "step": "build_unhealthy_candidate",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "#0 building with \"desktop-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 200B 0.0s done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/petshop-api:validation-baseline-dfcdd536\n#2 DONE 0.4s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/1] FROM docker.io/library/petshop-api:validation-baseline-dfcdd536@sha256:51176b87479d218867106d3c83d113f4acd80ccc2805fc4442b2e58d5125773f\n#4 resolve docker.io/library/petshop-api:validation-baseline-dfcdd536@sha256:51176b87479d218867106d3c83d113f4acd80ccc2805fc4442b2e58d5125773f 0.0s done\n#4 DONE 0.1s\n\n#5 exporting to image\n#5 exporting layers done\n#5 exporting manifest sha256:d122cda200399917590c4c8b222760e8a0d6af497d1cc8e67cbdecb58bcb44d5 0.0s done\n#5 exporting config sha256:2f7c94af4492d8c4fb402636be7add8040d4edaabadd1f5877010a202a044ee9 0.0s done\n#5 exporting attestation manifest sha256:f4cdf08a85aa8e55573bf84a68a735a069ebe01abac0caf1465bbcf0b3a28451 0.0s done\n#5 exporting manifest list sha256:59b7aa83d10fdc94baa19fd1b9ef5715fd0d0b4216176d3aa7b417f7eaaa199f 0.0s done\n#5 naming to docker.io/library/petshop-api:validation-unhealthy-f0475cd3\n#5 naming to docker.io/library/petshop-api:validation-unhealthy-f0475cd3 done\n#5 unpacking to docker.io/library/petshop-api:validation-unhealthy-f0475cd3 0.0s done\n#5 DONE 0.2s\n"
+    },
+    {
+      "step": "release_failure_rollback",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "output": "{\"event\": \"release_failed\", \"rollback_succeeded\": true, \"previous_image\": \"sha256:51176b87479d218867106d3c83d113f4acd80ccc2805fc4442b2e58d5125773f\", \"manual_action\": \"Set PETSHOP_IMAGE in .env to previous_image before any subsequent docker compose up; the saved configuration was not changed.\"}\n"
+    },
+    {
+      "step": "rollback_report_confirms_success",
+      "passed": true
+    },
+    {
+      "step": "rollback_report_same_immutable_image",
+      "passed": true
+    },
+    {
+      "step": "api_id_after_rollback",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "efc72684d0a3201c8e6f3814ac04fc4ff8a2a48c0407f8199d5fbaf769b38c18\n"
+    },
+    {
+      "step": "image_after_rollback",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "sha256:51176b87479d218867106d3c83d113f4acd80ccc2805fc4442b2e58d5125773f\n"
+    },
+    {
+      "step": "rollback_restores_immutable_image",
+      "passed": true
+    },
+    {
+      "step": "rollback_replaced_container",
+      "passed": true
+    },
+    {
+      "step": "http_persistence",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "output": "{\"phase\": \"persistence\", \"passed\": true, \"events\": 28, \"evidence\": \"D:\\\\Projects\\\\_outputs\\\\petshop-backend-review\\\\work\\\\fixed\\\\petshop-api\\\\work\\\\container-validation\\\\real-container-run\\\\persistence-20260929T054328.json\", \"error\": null}\n"
+    }
+  ]
+}
